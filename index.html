@@ -44,9 +44,6 @@
 	    						<label class="menu-level2" for="article-forms">Forms</label>
 	    					</li>
 	    					<li class="list-item">
-	    						<label class="menu-level2" for="article-buttons">Buttons</label>
-	    					</li>
-	    					<li class="list-item">
 	    						<label class="menu-level2" for="article-dropdowns">Dropdowns</label>
 	    					</li>
 	    					<li class="list-item">
@@ -62,10 +59,10 @@
 	    			</li>
 	    			<li class="list-item group-menu">
 	    				<label class="menu-level1">Updations</label>
-	    				<ol class="submenu">
+	    				<ol class="submenu"><!-- 
 	    					<li class="list-item">
 	    						<label class="menu-level2" for="article-new-break-point">New Break Point</label>
-	    					</li>
+	    					</li> -->
 	    					<li class="list-item">
 	    						<label class="menu-level2" for="article-new-grid-system">New Grid System</label>
 	    					</li>
@@ -74,6 +71,9 @@
 	    					</li>
 	    					<li class="list-item">
 	    						<label class="menu-level2" for="article-cards">Cards</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-borders">Borders</label>
 	    					</li>
 	    					<li class="list-item">
 	    						<label class="menu-level2" for="article-reboot">Reboot</label>
@@ -359,29 +359,24 @@
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Forms</h2>
 	    			<p class="item-description">
-	    				<a href="http://blog.getbootstrap.com/2016/07/27/bootstrap-4-alpha-3/#forms">Click here for contents</a>
+	    				Forms saw a ton of activity early on in Alpha 3’s development. Documentation, class names, layout options, and validation styles have all been drastically improved.
 	    			</p>
+	    			<ul class="common-list">
+	    				<li class="list-item">
+	    					New classes for checkboxes, radios, input sizing, and legends. While not 100% final, all form controls are named more clearly and consistently across our CSS.
+	    				</li>
+	    				<li class="list-item">
+	    					Replaced the base64 PNG background images with inline SVGs for custom form controls and validation states.
+	    				</li>
+	    				<li class="list-item">
+	    					We have brand new form validation and help text options. Validation states can now be applied on a per-input basis (with <span class="new-one">.form-control-{state}</span>) and optional validation feedback can be shown with <span class="new-one">.form-control-feedback</span>. Independent form help text can now be controlled with the new <span class="new-one">.form-text class</span>.
+	    				</li>
+	    				<li class="list-item">
+	    					Fixed a few form related bugs, like the horizontal label padding in #17498, misuse of &lt;fieldset&gt;s for form groups, sizing classes not applying to &lt;select&gt;s, and more.
+	    				</li>
+	    			</ul>
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-forms">
 	    			<label class="demo-slide" for="demo-forms"></label>
-	    			<div class="item-demo">
-	    				<div class="demo-heading h3">
-	    					
-	    				</div>
-	    				<div class="demo-content">
-	    					
-	    				</div>
-	    			</div>
-	    		</article>
-<!--==[ ARTICLE STARTS - BUTTONS ]===========================================-->
-
-	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-buttons">
-	    		<article class="each-item-container">
-	    			<h2 class="item-heading">Buttons</h2>
-	    			<p class="item-description">
-	    				
-	    			</p>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-buttons">
-	    			<label class="demo-slide" for="demo-buttons"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
 	    					
@@ -468,7 +463,7 @@
 	    		</article>
 <!--==[ ARTICLE STARTS - NEW BREAK POINT ]===========================================-->
 
-	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-break-point">
+<!-- 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-break-point">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">New Breakpoints</h2>
 	    			<p class="item-description">
@@ -484,7 +479,7 @@
 	    					
 	    				</div>
 	    			</div>
-	    		</article>
+	    		</article> -->
 <!--==[ ARTICLE STARTS - NEW GRID SYSTEM ]===========================================-->
 
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-grid-system">
@@ -1151,24 +1146,172 @@
 	    				</div>
 	    			</div>
 	    		</article>
+<!--==[ ARTICLE STARTS - BORDERS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-borders">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Borders</h2>
+	    			<p class="item-description">
+	    				Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+	    			</p>
+	    			<ul class="common-list">
+	    				<li class="list-item">
+	    					<p>Add classes to an element to remove all borders or some borders. We can use following classes for default styling.</p>    					
+							<ol class="common-list paragraph">
+								<li class="list-item new-one">.border-0</li>
+								<li class="list-item new-one">.border-top-0</li>
+								<li class="list-item new-one">.border-right-0</li>
+								<li class="list-item new-one">.border-bottom-0</li>
+								<li class="list-item new-one">.border-left-0</li>
+							</ol>
+	    				</li>
+	    				<li class="list-item">
+	    					<p>Add classes to an element to easily round its corners. Default classes are:  </p>
+							<ol class="common-list paragraph">
+								<li class="list-item new-one">.rounded</li>
+								<li class="list-item new-one">.rounded-top</li>
+								<li class="list-item new-one">.rounded-right</li>
+								<li class="list-item new-one">.rounded-bottom</li>
+								<li class="list-item new-one">.rounded-left</li>
+								<li class="list-item new-one">.rounded-circle</li>
+								<li class="list-item new-one">.rounded-0</li>
+							</ol>
+	    				</li>
+	    			</ul>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-buttons">
+	    			<label class="demo-slide" for="demo-buttons"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					Borders 
+	    				</div>
+	    				<div class="demo-content">
+	    					<ol class="common-list">
+	    						<li class="list-item">
+	    							<h4>Border</h4>
+	    							<div class="example-block">
+	    								<p>Below is an image showing how border properties for each class working.</p>
+	    								<p>Classes used are;</p>
+	    								<ol class="common-list paragraph">
+	    									<li class="list-item new-one">.border-0</li>
+	    									<li class="list-item new-one">.border-top-0</li>
+	    									<li class="list-item new-one">.border-right-0</li>
+	    									<li class="list-item new-one">.border-bottom-0</li>
+	    									<li class="list-item new-one">.border-left-0</li>
+	    								</ol>
+	    								<div class="design">
+			    							<img src="./src/images/border-styles.png">
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Border-radius</h4>
+	    							<div class="example-block">
+	    								<p>Below is an image showing how Border-radius properties for each class working.</p>
+	    								<p>Classes used are;</p>
+	    								<ol class="common-list paragraph">
+	    									<li class="list-item new-one">.rounded</li>
+	    									<li class="list-item new-one">.rounded-top</li>
+	    									<li class="list-item new-one">.rounded-right</li>
+	    									<li class="list-item new-one">.rounded-bottom</li>
+	    									<li class="list-item new-one">.rounded-left</li>
+	    									<li class="list-item new-one">.rounded-circle</li>
+	    									<li class="list-item new-one">.rounded-0</li>
+	    								</ol>
+	    								<div class="design">
+			    							<img src="./src/images/border-radius-styles.png">
+	    								</div>
+	    							</div>
+	    						</li>
+	    					</ol>
+	    				</div>
+	    			</div>
+	    		</article>
 <!--==[ ARTICLE STARTS - REBOOT ]===========================================-->
 
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-reboot">
 	    		<article class="each-item-container">
-	    			<h2 class="item-heading">Reboot</h2>
+	    			<h2 class="item-heading">Reboot CSS</h2>
 	    			<p class="item-description">
-	    				
+	    				<b>Part of Bootstrap’s job is to provide an elegant, consistent, and simple baseline to build upon. We use Reboot, a collection of element-specific CSS changes in a single file, to kickstart that.</b>
 	    			</p>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-reboot">
-	    			<label class="demo-slide" for="demo-reboot"></label>
-	    			<div class="item-demo">
-	    				<div class="demo-heading h3">
-	    					
-	    				</div>
-	    				<div class="demo-content">
-	    					
-	    				</div>
-	    			</div>
+	    			<p>
+	    				Reboot builds upon Normalize, providing many HTML elements with somewhat opinionated styles using only element selectors. Additional styling is done only with classes. For example, bootstrap reboot some &lt;table&gt; styles for a simpler baseline and later provide .table, .table-bordered, and more.
+	    			</p>
+	    			<p>Reboot css includes:</p>
+	    			<ul class="common-list">
+	    				<li class="list-item">
+	    					Update some browser default values to use rems instead of ems for scalable component spacing.
+	    				</li>
+	    				<li class="list-item">
+	    					Avoid margin-top. Vertical margins can collapse, yielding unexpected results. More importantly though, a single direction of margin is a simpler mental model.
+	    				</li>
+	    				<li class="list-item">
+	    					For easier scaling across device sizes, block elements should use rems for margins.
+	    				</li>
+	    				<li class="list-item">
+	    					Keep declarations of font-related properties to a minimum, using inherit whenever possible.
+	    				</li>
+	    				<li class="list-item">
+	    					The box-sizing is globally set on every element—including *:before and *:after, to border-box. This ensures that the declared width of element is never exceeded due to padding or border.
+	    				</li>
+	    				<li class="list-item">
+	    					A base font-size: 16px is declared on the &lt;html&gt; and font-size: 1rem on the &lt;body&gt; for easy responsive type-scaling via media queries.
+	    				</li>
+	    				<li class="list-item">
+	    					The &lt;body&gt; also sets a global font-family and line-height. This is inherited later by some form elements to prevent font inconsistencies.
+	    				</li>
+	    				<li class="list-item">
+	    					For safety, the &lt;body&gt; has a declared background-color, defaulting to #fff.
+	    				</li>
+	    				<li class="list-item">
+	    					The default web fonts (Helvetica Neue, Helvetica, and Arial) have been dropped in Bootstrap 4 and replaced with a “native font stack” for optimum text rendering on every device and OS. You can have a look <a href="https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/">here</a>.
+	    				</li>
+	    				<li class="list-item">
+	    					All heading elements—e.g., &lt;h1&gt; and &lt;p&gt; are reset to have their margin-top removed. Headings have margin-bottom: .5rem added and paragraphs margin-bottom: 1rem for easy spacing.
+	    				</li>
+	    				<li class="list-item">
+	    					All lists—&lt;ul&gt;, &lt;ol&gt;, and &lt;dl&gt; —have their margin-top removed and a margin-bottom: 1rem. Nested lists have no margin-bottom.
+	    				</li>
+	    				<li class="list-item">
+	    					For simpler styling, clear hierarchy, and better spacing, description lists have updated margins. &lt;dd&gt;s reset margin-left to 0 and add margin-bottom: .5rem. &lt;dt&gt;s are bolded.
+	    				</li>
+	    				<li class="list-item">
+	    					The &lt;pre&gt; element is reset to remove its margin-top and use rem units for its margin-bottom.
+	    				</li>
+	    				<li class="list-item">
+	    					Tables are slightly adjusted to style &lt;caption&gt;s, collapse borders, and ensure consistent text-align throughout. Additional changes for borders, padding, and more come with the .table class.
+	    				</li>
+	    				<li class="list-item">
+	    					&lt;fieldset&gt;s have no borders, padding, or margin so they can be easily used as wrappers for individual inputs or groups of inputs.
+	    				</li>
+	    				<li class="list-item">
+	    					&lt;legend&gt;s, like fieldsets, have also been restyled to be displayed as a heading of sorts.
+	    				</li>
+	    				<li class="list-item">
+	    					&lt;label&gt;s are set to display: inline-block to allow margin to be applied.
+	    				</li>
+	    				<li class="list-item">
+	    					&lt;input&gt;s, &lt;select&gt;s, &lt;textarea&gt;s, and &lt;button&gt;s are mostly addressed by Normalize, but Reboot removes their margin and sets line-height: inherit, too.
+	    				</li>
+	    				<li class="list-item">
+	    					&lt;textarea&gt;s are modified to only be resizable vertically as horizontal resizing often “breaks” page layout.
+	    				</li>
+	    				<li class="list-item">
+	    					The &lt;address&gt; element is updated to reset the browser default font-style from italic to normal. line-height is also now inherited, and margin-bottom: 1rem has been added. &lt;address&gt;s are for presenting contact information for the nearest ancestor (or an entire body of work). Preserve formatting by ending lines with &lt;br&gt;.
+	    				</li>
+	    				<li class="list-item">
+	    					The default margin on blockquotes is 1em 40px, so we reset that to 0 0 1rem for something more consistent with other elements.
+	    				</li>
+	    				<li class="list-item">
+	    					The &lt;abbr&lt; element receives basic styling to make it stand out amongst paragraph text.
+	    				</li>
+	    				<li class="list-item">
+	    					HTML5 adds a new global attribute named [hidden], which is styled as display: none by default. Borrowing an idea from PureCSS, we improve upon this default by making [hidden] { display: none !important; } to help prevent its display from getting accidentally overridden. While [hidden] isn’t natively supported by IE10, the explicit declaration in our CSS gets around that problem.
+	    					<span class="col-sm-12 indicator">
+	    						To merely toggle the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document, use the <span class="new-one">.invisible</span> class instead.
+	    					</span>
+	    				</li>
+	    			</ul>
 	    		</article>
 <!--==[ ARTICLE STARTS - TABLES ]===========================================-->
 
