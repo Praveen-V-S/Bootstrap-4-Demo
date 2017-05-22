@@ -9,48 +9,1297 @@
 <body>
     <main>
     	<header class="page-header">
-    		<div class="container d-flex">
+    		<div class="container">
     			<h1 class="main-title">Bootstrap 4</h1>
     		</div>
     	</header>
+<!--==[ LEFT MENU STARTS ]========================================-->
     	<section class="container d-flex main-content p-0">
 	    	<input autocomplete="off" type="checkbox" class="hidden" id="left-nav"> 
 	    	<aside class="left-nav">
 	    		<h3 class="nav-title">
-	    			<span class="title-content">Properties</span>
+	    			<!-- <span class="title-content">Properties</span> -->
 	    			<label class="left-nav-slide" for="left-nav"></label>
 	    		</h3>
 	    		<ul class="left-menu">
 	    			<li class="list-item">
-	    				<label for=""></label>
+	    				<label class="menu-level1 active" for="article-whats-bootstrap">Bootstrap</label>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-installation">Installation</label>
+	    			</li>
+	    			<li class="list-item group-menu">
+	    				<label class="menu-level1">Modifications</label>
+	    				<ol class="submenu">
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-less-to-sass">LESS to SASS</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-px-to-Rem">px to rem</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-images-class">Image Classes</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-forms">Forms</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-buttons">Buttons</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-dropdowns">Dropdowns</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-nav">Nav Classes</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-tooltips">Tool Tips</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-genric-modifications">Genric modifications</label>
+	    					</li>
+	    				</ol>
+	    			</li>
+	    			<li class="list-item group-menu">
+	    				<label class="menu-level1">Updations</label>
+	    				<ol class="submenu">
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-new-break-point">New Break Point</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-new-grid-system">New Grid System</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-flexbox">Flexbox</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-cards">Cards</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-reboot">Reboot</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-tables">Tables</label>
+	    					</li>
+	    					<li class="list-item">
+	    						<label class="menu-level2" for="article-navbar">Navbar</label>
+	    					</li>
+	    				</ol>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-themes">Themes</label>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-removed">Removed</label>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-common-changes">Common Changes</label>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-points-to-remember">Points to remember</label>
+	    			</li>
+	    			<li class="list-item">
+	    				<label class="menu-level1" for="article-conclusion">Conclusion</label>
 	    			</li>
 	    		</ul>
 	    	</aside>
+<!--==[ LEFT MENU ENDS ]==============================================-->
+
+<!--==[ RIGHT CONTENT STARTS ]========================================-->
+<!--==[ ARTICLE STARTS - WHAT'S BOOTSTRAP ]===========================================-->
 	    	<input auto-complete="off" type="checkbox" class="hidden" id="right-content">
 	    	<aside class="right-content">
-	    		<input autocomplete="off" type="radio" class="hidden" name="each-item" id="">
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" checked name="each-item" id="article-whats-bootstrap">
 	    		<article class="each-item-container">
-	    			<h2 class="item-heading">What is Bootstrap?</h2>
+	    			<h2 class="item-heading">What is Bootstrap 4?</h2>
 	    			<p class="item-description">
-	    				Bootstrap is a free and open-source framework for creating websites and web applications. It's the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+	    				Bootstrap 4 is a free and open-source framework for creating websites and web applications. It's the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 	    			</p>
-	    			<label class="demo-slide" for="whatsBootstrap"></label>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="whatsBootstrap">
+	    			<p class="indicator nb paragraph">
+	    				Only alpha version for Bootstrap 4 is released and hense, it will be changing until the final release. <b>Do not use alpha versions in production. </b>
+	    			</p>
+	    			<h4>Latest version</h4>
+	    			<p><b class="new-one">Bootstrap 4 Alpha 6</b> released on <b>06 Jan 2017</b> is the latest version available. Time of building this site is May 2017.</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - INSTALLATION ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-installation">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Steps for installation of Bootstrap 4</h2>
+	    			<h4>Here's what you need to include in your web page in order to use Bootstrap 4.</h4>
+	    			<p class="item-description">
+	    			You can use following 2 methods:
+	    			</p>
+	    			<ol class="common-list">
+	    				<li class="list-item">You can download the complete source file and attach the files to your project. You can download latest version <a class="inline-link" target="_blank" href="https://v4-alpha.getbootstrap.com/getting-started/download/">here</a>.</li>
+	    				<li class="list-item">You can link files via the Bootstrap CDN (Content Delivery Network).
+	    					<div class="code-template">
+	    						<p>Place the following stylesheet code in the document's head:</p>
+	    						<code class="code-display">
+	    							<pre class="code-line">
+	    								<span class="code comment">&lt;!-- Latest compiled and minified CSS --&gt;</span>
+	    								<span class="code">&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"&gt;</span>
+	    							</pre>
+	    						</code>
+	    						<p>Place the following javascript files at the bottom of your document (just before the end &lt;body&gt; tag):</p>
+	    						<code class="code-display">
+		    						<pre class="code-line">
+			    						<span class="code comment">&lt;!-- jQuery library --&gt;</span>
+			    						<span class="code">&lt;script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"&gt;&lt;/script&gt;</span>
+
+			    						<span class="code comment">&lt;!-- Tether --&gt;</span>
+			    						<span class="code">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"&gt;&lt;/script&gt;</span>
+
+			    						<span class="code comment">&lt;!-- Latest compiled JavaScript --&gt;</span>
+			    						<span class="code">&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"&gt;&lt;/script&gt;</span>
+									</pre>
+	    						</code>
+	    						<h4>Design &amp; Development Standards.</h4>
+	    						<ol class="common-list">
+	    							<li class="list-item">
+	    								<p>Your HTML documents should begin with the HTML5 &lt;!DOCTYPE&gt; declaration. Like this:</p>
+			    						<code class="code-display">
+				    						<pre class="code-line">
+					    						<span class="code">
+					    							&lt;!DOCTYPE html&gt;<br/>
+													&lt;html lang="en"&gt;<br/>
+													  ...<br/>
+													&lt;/html&gt;
+					    						</span>
+					    					</pre>
+					    				</code>
+	    							</li>
+	    							<li class="list-item">
+	    								<p>To ensure proper rendering and touch zooming on mobile devices, add the viewport meta tag, like this:</p>
+	    								<code class="code-display">
+				    						<pre class="code-line">
+					    						<span class="code">
+					    							&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+					    						</span>
+					    					</pre>
+					    				</code>
+	    							</li>
+	    							<li class="list-item">
+	    								<h5>Quick Start: Bootstrap 4 Template</h5>
+	    								<p>You can use the following template as a basis for your Bootstrap 4 web pages. This template contains the necessary !DOCTYPE preamble, links to CSS and JS files, as well as the viewport meta tag.</p>
+	    								<code class="code-display">
+				    						<pre class="code-line group-code">
+					    						<span class="code comment">&lt;!-- DOCTYPE --&gt;</span>
+					    						<span class="code pre">&lt;html lang="en"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Bootstrap Example Template&lt;/title&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
+					    						</span>
+				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Viewport Meta Tag --&gt;</span>
+					    						<span class="code">
+					    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+					    						</span>				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Bootstrap CSS --&gt;</span>
+					    						<span class="code">
+					    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"&gt;
+					    						</span>
+					    						<span class="code pre">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+					    						</span>				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- YOUR CONTENT GOES HERE --&gt;</span>
+					    						<span class="code pre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+					    						</span>				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- JavaScript: placed at the end of the document so the pages load faster --&gt;</span>
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- jQuery library --&gt;</span>
+					    						<span class="code">
+					    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"&gt;&lt;/script&gt;
+					    						</span>				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Tether --&gt;</span>
+					    						<span class="code">
+					    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"&gt;&lt;/script&gt;
+					    						</span>				    						
+					    						<span class="code comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Latest compiled JavaScript --&gt;</span>
+					    						<span class="code">
+					    							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"&gt;&lt;/script&gt;
+					    						</span>				    						
+					    						<span class="code pre">
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt;
+												</span>
+					    					</pre>
+					    				</code>
+	    							</li>
+	    						</ol>
+	    					</div>
+	    				</li>
+	    			</ol>
+	    		</article>
+<!--==[ ARTICLE STARTS - LESS TO SASS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-less-to-sass">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">LESS to SASS</h2>
+	    			<ul class="common-list">
+	    				<li class="list-item">
+	    					Switched from Less to Sass for our source CSS files. Bootstrap 4 changed from regular CSS to SCSS to take full advantage of Bootstrap’s variables, mixins, and more.
+	    				</li>
+	    				<li class="list-item">
+	    					Replaced the separate optional theme with configurable options via SCSS variables (e.g., $enable-gradients: true).
+	    				</li>
+	    				<li class="list-item">
+	    					Grid breakpoints and container widths are now handled via Sass maps ($grid-breakpoints and $container-max-widths) instead of a handful of separate variables. These replace the @screen-* variables entirely and allow you to fully customize the grid tiers.
+	    				</li>
+	    				<li class="list-item">
+	    					All @screen- variables have been removed in v4.0.0. Use the media-breakpoint-up(), media-breakpoint-down(), or media-breakpoint-only() Sass mixins or the $grid-breakpoints Sass map instead.
+	    				</li>
+	    				<li class="list-item">
+	    					Media queries have also changed. Instead of repeating our media query declarations with the same value each time, we now have @include media-breakpoint-up/down/only. Now, instead of writing @media (min-width: @screen-sm-min) { ... }, you can write @include media-breakpoint-up(sm) { ... }.
+	    				</li>
+	    			</ul>
+	    		</article>
+<!--==[ ARTICLE STARTS - PX TO REM ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-px-to-Rem">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Px to Rem</h2>
+	    			<p class="item-description">
+	    				<b>Bootstrap 4</b> is using REM. They switched from px to rem as there primary CSS unit, though pixels are still used for media queries and grid behavior as viewports are not affected by type size.
+						And also global font-size increased from 14px to 16px. we can see the diffrence between EM vs REM vs PX.
+	    			</p>
+	    			<h5 class="sub-head">PX</h5>
+	    			<p class="item-description">
+	    				Pixels (px) are what we’ve all become accustomed to over the years. Everyone knows what a pixel is. Everyone is comfortable with using pixels. They’re easily translatable. Designers typically work in pixels, so it’s easy to take sizes directly from Photoshop straight in to build.
+	    			</p>
+	    			<h5 class="sub-head">REMs</h5>
+	    			<p class="item-description">
+	    				If you’re in any way familiar with the web design world, you will undoubtedly have heard of REMs. If you’re not, REMs are a way of setting font-sizes based on the font-size of the root HTML element. They also allow you to quickly scale an entire project by changing the root font-size.
+	    			</p>
+	    			<h5 class="sub-head">EM</h5>
+	    			<p class="item-description">
+	    				EMs perform initially in a similar fashion to REMs, until it comes to nesting. I’ve never been a fan of EMs, especially when it comes to font-sizes. For example, take a div with a font-size of 2em, then add a paragraph with a font-size of 2em. The font-size of that paragraph is now 2ems relative to the div. I quickly lose track of the maths and what size is what, and it quickly becomes unmanageable. This is what REMs solve - the size always refers back to the root.
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-px-to-rem">
+	    			<label class="demo-slide" for="demo-px-to-rem"></label>
 	    			<div class="item-demo">
-	    				<label class="demo-slide" for="whatsBootstrap"></label>
-	    				<div class="demo-heading">
-	    					
+	    				<div class="demo-heading h3">
+	    					PX vs REM
 	    				</div>
 	    				<div class="demo-content">
-	    					Bootstrap is a free and open-source framework for creating websites and web applications. It's the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+	    					<h3>PX</h3>
+	    					<div class="px-content">
+	    						<div class="column-1 col-sm-3"></div>
+	    						<div class="column-2 col-sm-3"></div>
+	    						<div class="column-3 col-sm-3"></div>
+	    						<div class="column-4 col-sm-3"></div>
+	    					</div>
+	    					<h3>REM</h3>
+	    					<div class="rem-content">
+	    						<div class="column-1 col-sm-3"></div>
+	    						<div class="column-2 col-sm-3"></div>
+	    						<div class="column-3 col-sm-3"></div>
+	    						<div class="column-4 col-sm-3"></div>
+	    					</div>
 	    				</div>
 	    			</div>
 	    		</article>
+<!--==[ ARTICLE STARTS - IMAGE CLASSES ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-images-class">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">New Image classes</h2>
+	    			<p class="item-description">
+	    				Opt your images into responsive behavior and add lightweight styles to them—all via classes. There are some changes in Bootstrap 4 for the predefined class names used for image styling.
+	    			</p>
+					<ol class="common-list paragraph">
+						<li class="list-item">Renamed <span class="old-one">.img-responsive</span> to <span class="replaced-one">.img-fluid</span></li>
+						<li class="list-item">Renamed <span class="old-one">.img-rounded</span> to <span class="replaced-one">.rounded</span></li>
+						<li class="list-item">Renamed <span class="old-one">.img-circle</span> to <span class="replaced-one">.rounded-circle</span></li>
+					</ol>
+					<h4 class="sub-head">Image thumbnails</h4>
+					<p>
+						In addition to our border-radius utilities, you can use <span class="new-one">.img-thumbnail</span> to give an image a rounded 1px border appearance.
+					</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-image-class">
+	    			<label class="demo-slide" for="demo-image-class"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					Image styles
+	    				</div>
+	    				<div class="demo-content">
+							<ol class="common-list">
+								<li class="list-item">
+									<h5><span class="old-one">.img-responsive</span> to <span class="replaced-one">.img-fluid</span></h5>
+									<p>
+										<img src="./src/images/summer-sunshine-wallpaper-1.jpg" class="img-fluid">
+									</p>
+								</li>
+								<li class="list-item">
+									<h5><span class="old-one">.img-rounded</span> to <span class="replaced-one">.rounded</span></h5>
+									<p>
+										<img src="./src/images/summer-nature-65276.jpg" class="img-fluid rounded">
+									</p>
+								</li>
+								<li class="list-item">
+									<h5><span class="old-one">.img-circle</span> to <span class="replaced-one">.rounded-circle</span></h5>
+									<p>
+										<img src="./src/images/pink-flower-wallpaper-hd-resolution.jpg" class="img-fluid rounded-circle">
+									</p>
+								</li>
+								<li class="list-item">
+									<h5><span class="new-one">.img-thumbnail</span></h5>
+									<p>
+										<img src="./src/images/nature-field-summer-quantity.jpg" class="img-fluid img-thumbnail">
+									</p>
+								</li>
+							</ol>
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - FORMS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-forms">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Forms</h2>
+	    			<p class="item-description">
+	    				<a href="http://blog.getbootstrap.com/2016/07/27/bootstrap-4-alpha-3/#forms">Click here for contents</a>
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-forms">
+	    			<label class="demo-slide" for="demo-forms"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - BUTTONS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-buttons">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Buttons</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-buttons">
+	    			<label class="demo-slide" for="demo-buttons"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - DROPDOWNS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-dropdowns">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Dropdowns</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-dropdowns">
+	    			<label class="demo-slide" for="demo-dropdowns"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - NAV ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-nav">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Nav</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-nav">
+	    			<label class="demo-slide" for="demo-nav"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - TOOLTIPS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-tooltips">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Tooltips</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-tooltips">
+	    			<label class="demo-slide" for="demo-tooltips"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - Genric Modifications ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-genric-modifications">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">
+    					Generic modifications.
+    				</h2>
+	    			<p class="item-description">
+    					<ul class="common-list">
+    						<li class="list-item">Global font-size increased from 14px to 16px.</li>
+    						<li class="list-item">Added a new grid tier for smaller devices at 576px and below (our new xs tier).</li>
+    						<li class="list-item">Custom &lt;blockquote&gt; styling has moved to classes—.blockquote and the .blockquote-reverse modifier.</li>
+    						<li class="list-item"></li>
+    						<li class="list-item"></li>
+    						<li class="list-item"></li>
+    					</ul>	    				
+	    			</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - NEW BREAK POINT ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-break-point">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">New Breakpoints</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-new-break-point">
+	    			<label class="demo-slide" for="demo-new-break-point"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - NEW GRID SYSTEM ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-grid-system">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">New Grid System</h2>
+	    			<p class="item-description">
+	    				Among the components that were already in action in Bootstrap 3 but have relevant edits in version 4, I want to mention two important changes. Firstly, a new grid breakpoint with the col-xl-* classes has been introduced. The 4 tier grid system Bootstrap 3 was based on has turned into being a 5 tier grid system including a new breakpoint to support all typical portrait and landscape screen widths.
+
+						Now the 5 tiers are:
+
+						    Extra-small (<544 px)
+						    Small (≥544 px)
+						    Medium (≥768 px)
+						    Large (≥992 px)
+						    Extra-large (≥1200 px)
+
+						The XL breakpoint is for >1200px screen widths, while the XS breakpoint allows us to target screens smaller than 544px, providing better support for typical smaller device widths.
+
+						The col-xs-* tier in version 3 supported screen widths under 768px, while the new tier supports screen widths under 544px. As a consequence, this change improves support for portrait views on mobile devices (smartphones).
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-new-grid-system">
+	    			<label class="demo-slide" for="demo-new-grid-system"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - FLEXBOX ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-flexbox">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Flexbox</h2>
+	    			<p class="item-description">
+	    				One of the greatest innovations in this version of Bootstrap is the support for Flexbox, which provides simpler and more flexible layout options in CSS.
+
+
+					    More specifically, [Flexbox] provides:
+
+					        Easy vertical alignment of content within a parent element.
+					        Easy reordering of content across devices and screen resolutions with the help of media queries.
+					        Easy CSS-only equal height columns for your grid-based layouts.
+
+					    All these things are possible outside flexbox, but typically require extra hacks and workarounds to do right.
+
+	    			</p>
+	    			<p><b>Auto layout columns.</b>
+	    				Automatic equal-width column sizing with new .col-{breakpoint} classes. For example, for three equal-width columns at the xs breakpoint, you’d create three columns each with just .col-xs.
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-flexbox">
+	    			<label class="demo-slide" for="demo-flexbox"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - CARDS ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-cards">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Cards</h2>
+	    			<p class="item-description">
+	    				A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.
+	    			</p>
+	    			<p>
+	    				If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+	    			</p>
+	    			<p>
+	    				Below is an example of a basic card. Cards have no fixed width to start, so they’ll naturally fill the full width of its parent element.
+	    			</p>
+	    			<code class="code-display paragraph">
+						<pre class="code-line">
+						<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="card-img-top" src="..." alt="Card image title"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;Some text to build on the card title and make up the content.&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+						</pre>
+					</code>
+					<h3>Content types</h3>
+					<p class="paragraph">
+						Cards support a wide variety of content, including images, text, list groups, links, and more.
+					</p>
+					<h4 class="sub-head">Blocks</h4>
+					<p class="paragraph">
+						The building block of a card is the <span class="new-one">.card-block</span>. Use it whenever you need a padded section within a card.
+					</p>
+					<h4 class="sub-head">Titles, text, and links</h4>
+					<p>
+						Card titles are used by adding <span class="new-one">.card-title</span> to a <h*> tag. In the same way, links are added and placed next to each other by adding <span class="new-one">.card-link</span> to a <a> tag.
+					</p>
+					<p class="paragraph">
+						Subtitles are used by adding a .card-subtitle to a <h*> tag. If the .card-title and the <span class="new-one">.card-subtitle</span> items are placed in a <span class="new-one">.card-block item</span>, the card title and subtitle are aligned nicely.
+					</p>
+					<h4 class="sub-head">Images</h4>
+					<p class="paragraph">
+						<span class="new-one">.card-img-top</span> places an image to the top of the card. With <span class="new-one">.card-text</span>, text can be added to the card. Text within .card-text can also be styled with the standard HTML tags.
+					</p>
+					<h4 class="sub-head">List groups</h4>
+					<p class="paragraph">Create lists of content in a card with a flush list group.</p>
+					<h4 class="sub-head">Kitchen sink</h4>
+					<p class="paragraph">
+						Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
+					</p>
+					<h5 class="sub-head">Header and footer</h4>
+					<p class="paragraph">
+						Add an optional header and/or footer within a card. You can use <span class="new-one">.card-header</span> and <span class="new-one">.card-footer</span>
+					</p>
+					<h5 class="sub-head">Inverted text</h4>
+					<p class="paragraph">
+						By default, cards use dark text and assume a light background. You can reverse that by toggling the color of text within, as well as that of the card’s subcomponents, with <span class="new-one">.card-inverse</span>. Then, specify a dark background-color and border-color to go with it.
+					</p>
+					<h5 class="sub-head">Background variants</h4>
+					<p>
+						Cards include their own variant classes for quickly changing the <b>background-color</b> and <b>border-color</b> of a card. Darker colors require the use of <span class="new-one">.card-inverse</span>.
+					</p>
+					<p class="paragraph">
+						We can use default classes provided. Default classes are <span class="new-one">.card-primary, <span class="new-one">.card-success</span>, <span class="new-one">.card-info</span>, <span class="new-one">.card-warning</span>, <span class="new-one">.card-danger</span> etc.
+					</p>
+					<h5 class="sub-head">Outline cards</h4>
+					<p class="paragraph">
+						In need of a colored card, but not the hefty background colors they bring? Replace the default modifier classes with the <span class="new-one">.card-outline-*</span> ones to style just the border-color of a card. Eg: <span class="new-one">.card-outline-primary</span>, <span class="new-one">.card-outline-success</span> etc.
+					</p>
+					<h5 class="sub-head">Image overlays</h4>
+					<p class="paragraph">
+						Turn an image into a card background and overlay your card’s text. Depending on the image, you may or may not need <span class="new-one">.card-inverse</span>.
+					</p>
+					<p>You can see more customisation options <a class="inline-link" target="_blank" href="https://v4-alpha.getbootstrap.com/components/card/#card-layout">here</a></p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-cards">
+	    			<label class="demo-slide" for="demo-cards"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					Cards Customization Examples
+	    				</div>
+	    				<div class="demo-content">
+	    					<ol class="common-list">
+	    						<li class="list-item">
+	    							<h4>Blocks</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+			    							<div class="card">
+											  <div class="card-block">
+											    This is some text within a card block.
+											  </div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is some text within a card block.
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>
+	    								Titles, text, and links
+	    							</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+			    							<div class="card">
+												<div class="card-block">
+												    <h4 class="card-title">Card title</h4>
+												    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+												    <p class="card-text">Some text to build on the card title and make the card's content.</p>
+												    <a href="#" class="card-link">Card link</a>
+												    <a href="#" class="card-link">Another link</a>
+												 </div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 class="card-subtitle mb-2 text-muted"&gt;Card subtitle&lt;/h6&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some text to build on the card title and make the card's content.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-link"&gt;Another link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;&lt;/span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Images</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+			    							<div class="card">
+												<img class="card-img-top" src="./src/images/images1.jpg" alt="Card image cap">
+												<div class="card-block">
+													<p class="card-text">Some text to build on the card title and make up the card's content.</p>
+												</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some text to build on the card title and make up the card's content.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>List groups</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+			    							<div class="card">
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">List Item 1</li>
+													<li class="list-group-item">List Item 2</li>
+													<li class="list-group-item">List Item 3</li>
+												</ul>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="list-group list-group-flush">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item">List Item 1&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item">List Item 2&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item">List Item 3&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Kitchen sink</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card" style="width: 20rem;">
+												<img class="card-img-top" src="./src/images/images2.jpg" alt="Card image cap">
+												<div class="card-block">
+													<h4 class="card-title">Card title</h4>
+													<p class="card-text">
+														Some text to build on the card title and make up the card's content.
+													</p>
+												</div>
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">List Item 1</li>
+													<li class="list-group-item">List Item 2</li>
+													<li class="list-group-item">List Item 3</li>
+												</ul>
+												<div class="card-block">
+													<a href="#" class="card-link">Link 1</a>
+													<a href="#" class="card-link">Link2</a>
+												</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card" style="width: 20rem;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some text to build on the card title and make up the card's content.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="list-group list-group-flush"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item"&gt;List Item 1&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item"&gt;List Item 2&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="list-group-item"&gt;List Item 3&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-link"&gt;Link 1&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-link"&gt;Link2&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Header &amp; Footer</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card">
+												<div class="card-header">
+													Card Header
+												</div>
+												<div class="card-block">
+													<h4 class="card-title">Card Title</h4>
+													<p class="card-text">
+														Some text to build on the card title and make up the card's content.
+													</p>
+													<a href="#" class="btn btn-primary">Button 1</a>
+												</div>
+												<div class="card-footer text-muted">
+													Card Footer
+												</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-header"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card Header
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Card Title&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some text to build on the card title and make up the card's content.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary"&gt;Button 1&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-footer text-muted"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Card Footer
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Inverted text</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card">
+<div class="card card-inverse" style="background-color: #12569E; border-color: #032E5D;">
+	<div class="card-block">
+		<h3 class="card-title">Card Title</h3>
+		<p class="card-text">
+			Some text to build on the card title and make up the card's content.
+		</p>
+		<a href="#" class="btn btn-primary">Details</a>
+	</div>
+</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card card-inverse" style="background-color: #12569E; border-color: #032E5D;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="card-title"&gt;Card Title&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some text to build on the card title and make up the card's content.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary">Details&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Background variants</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card">
+												<div class="card card-inverse card-primary mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-inverse card-success mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-inverse card-info mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-inverse card-warning mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-inverse card-danger mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card card-inverse card-primary mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-inverse card-success mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-inverse card-info mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-inverse card-warning mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-inverse card-danger mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Outline cards</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card">
+												<div class="card card-outline-primary mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-outline-secondary mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-outline-success mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-outline-info mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-outline-warning mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+												<div class="card card-outline-danger mb-3 text-center">
+													<div class="card-block">
+														<blockquote class="card-blockquote">
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+															</p>
+														</blockquote>
+													</div>
+												</div>
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card card-outline-primary mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-outline-secondary mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-outline-success mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-outline-info mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-outline-warning mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card card-outline-danger mb-3 text-center"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-block"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;blockquote class="card-blockquote"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/blockquote&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>Image overlays</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<div class="card">
+												<div class="card card-inverse">
+													<img class="card-img" src="./src/images/images3.jpg" alt="Card image">
+													<div class="card-img-overlay">
+														<h4 class="card-title">Card title</h4>
+														<p class="card-text">
+															This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+														</p>
+														<p class="card-text">
+															<small class="text-muted">
+																Last updated 3 mins ago
+															</small>
+														</p>
+													</div>
+												</div>	
+											</div>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="card card-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="card-img" src="..." alt="Card image"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-img-overlay"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small class="text-muted"&gt;Last updated 3 mins ago&lt;/small&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    					</ol>
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - REBOOT ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-reboot">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Reboot</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-reboot">
+	    			<label class="demo-slide" for="demo-reboot"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - TABLES ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-tables">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Tables</h2>
+	    			<p class="item-description">
+	    				Secondly, Bootstrap 3 does not support custom forms, which have been introduced in version 4. These are completely customizable elements that replace the browser defaults. 
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-tables">
+	    			<label class="demo-slide" for="demo-tables"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - NAVBAR ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-navbar">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Navbar</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-navbar">
+	    			<label class="demo-slide" for="demo-navbar"></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE STARTS - THEMES ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-themes">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Themes</h2>
+	    			<p class="item-description">
+	    				bootswatch.com</br>
+
+	    			</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - REMOVED ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-removed">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Removed Codes</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - COMMON CHANGES ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-common-changes">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Common changes in bootstrap 4</h2>
+	    			<ol class="common-list">
+	    				<li class="list-item">
+	    					Total of above 1,20,000 lines of codes are changed in new version.
+	    				</li>
+	    				<li class="list-item">
+	    					Changed from LESS to SASS.
+	    				</li>
+	    				<li class="list-item">
+	    					Grid system changed - Added a new grid tier for smaller devices at 576px and below (xs tier added).
+	    				</li>
+	    				<li class="list-item">
+	    					Units chnaged from px to rem.
+	    				</li>
+	    				<li class="list-item">Global font-size increased from 14px to 16px.</li>
+	    				<li class="list-item">Dropped IE8, IE9, and iOS 6 support. v4 is now only IE10+ and iOS 7+. Added official support for Android v5.0 Lollipop’s Browser and WebView.</li>
+	    				<li class="list-item">Replaced Wells, Thumbnails &amp; panels into a tottaly new component called "Cards". Cards are highly customisable.</li>
+	    				<li class="list-item">Bootstrap added "Reboot". Combination of normalise and reset css.</li>
+	    				<li class="list-item">
+	    					SASS variables are in a single customisable file.
+	    				</li>
+	    				<li class="list-item">Lots of new improvements to JS and CSS - better tooltip, Improved documentation.</li>
+	    			</ol>
+	    		</article>
+<!--==[ ARTICLE STARTS - POINTS TO REMEMBER ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-points-to-remember">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Points to remember</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - CONCLUSION ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-conclusion">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading">Conclusion</h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    		</article>
+<!--==[ ARTICLE STARTS - SAMBLE ]===========================================-->
+
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="">
+	    		<article class="each-item-container">
+	    			<h2 class="item-heading"></h2>
+	    			<p class="item-description">
+	    				
+	    			</p>
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="">
+	    			<label class="demo-slide" for=""></label>
+	    			<div class="item-demo">
+	    				<div class="demo-heading h3">
+	    					
+	    				</div>
+	    				<div class="demo-content">
+	    					
+	    				</div>
+	    			</div>
+	    		</article>
+<!--==[ ARTICLE'S ENDS ]=============================================-->
+
 	    	</aside>
+<!--==[ RIGHT CONTENT ENDS ]========================================-->
+
     	</section>
     </main>
 
-    <!-- JavaScript: placed at the end of the document so the pages load faster -->
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
@@ -61,6 +1310,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     
-    <script src="build/bundle.js"></script>
+    <script src="/build/bundle.js"></script>
 </body>
 </html>
