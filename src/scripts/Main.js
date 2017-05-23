@@ -17,4 +17,7 @@ $(document).ready(function(){
         parent.find('.menu-level1').addClass('active');
         current.addClass('active');
     });
+
+                            
+   $('[data-toggle="tooltip"]').tooltip();
 });
