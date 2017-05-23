@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0324b2c3f3b0e246f687"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5b4df26b356bd64f32ee"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -734,6 +734,8 @@ $(document).ready(function () {
         parent.find('.menu-level1').addClass('active');
         current.addClass('active');
     });
+
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 /***/ }),
