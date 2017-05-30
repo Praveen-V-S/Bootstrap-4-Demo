@@ -19,7 +19,7 @@ html {
 body {
   font-size: 1rem;
   color: #000;
-  background: url("/src/images/header-repeat.jpg") repeat left top; }
+  background: url(/e8b79a6afaab55358f6a72927b3de432.jpg) repeat left top; }
 
 @media only screen and (min-width: 768px) {
   html {
@@ -543,7 +543,7 @@ body {
     position: relative; }
   .left-nav .left-nav-slide {
     right: 0;
-    background-image: url("/src/images/leftarrow.png");
+    background-image: url(/c1147be5d2915645f2c17e3ca90e6ed2.png);
     border-right: 0; }
     .left-nav .left-nav-slide:before {
       content: "Close Nav";
@@ -636,7 +636,7 @@ body {
     width: 0px;
     opacity: 0;
     left: 0px;
-    background-image: url("/src/images/rightarrow.png");
+    background-image: url(/46dd05f4db301a064de899631ecb37b1.png);
     border-left: 0; }
     .right-content .left-nav-slide:before {
       content: "Open nav";

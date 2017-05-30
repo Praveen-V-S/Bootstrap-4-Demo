@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1rem;
     color: #000;
-    background: url('/src/images/header-repeat.jpg') repeat left top;
+    background: url('../images/header-repeat.jpg') repeat left top;
 }
 
 @media only screen and (min-width: 768px) { 
@@ -598,7 +598,7 @@ body {
     }
     .left-nav-slide {
         right: 0;
-        background-image: url('/src/images/leftarrow.png');
+        background-image: url('../images/leftarrow.png');
         border-right: 0;
         &:before {
             content: "Close Nav";
@@ -718,7 +718,7 @@ body {
         width: 0px;
         opacity: 0;
         left: 0px;
-        background-image: url('/src/images/rightarrow.png');
+        background-image: url('../images/rightarrow.png');
         border-left: 0;
         &:before {
             content: "Open nav";
