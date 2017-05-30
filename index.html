@@ -10,6 +10,17 @@
     <main>
     	<header class="page-header">
     		<div class="container">
+    			<aside class="cube-wrap logo">
+					<div class="cube">
+						<div data-content="" class="side front"></div>
+						<div data-content="" class="side back"></div>
+<!-- 						<div data-content="" class="side top"></div>
+						<div data-content="" class="side bottom"></div> -->
+						<div data-content="" class="side left"></div>
+						<div data-content="" class="side right"></div>
+						<div data-content="B4" class="center middle"></div>
+					</div>
+				</aside>
     			<h1 class="main-title">Bootstrap 4</h1>
     		</div>
     	</header>
@@ -63,10 +74,7 @@
 		    			</li>
 		    			<li class="list-item group-menu">
 		    				<label class="menu-level1">Updations</label>
-		    				<ol class="submenu"><!-- 
-		    					<li class="list-item">
-		    						<label class="menu-level2" for="article-new-break-point">New Break Point</label>
-		    					</li> -->
+		    				<ol class="submenu">
 		    					<li class="list-item">
 		    						<label class="menu-level2" for="article-new-grid-system">New Grid System</label>
 		    					</li>
@@ -85,9 +93,9 @@
 		    					<li class="list-item">
 		    						<label class="menu-level2" for="article-tables">Tables</label>
 		    					</li>
-		    					<!-- <li class="list-item">
+		    					<li class="list-item">
 		    						<label class="menu-level2" for="article-navbar">Navbar</label>
-		    					</li> -->
+		    					</li>
 		    				</ol>
 		    			</li>
 		    			<li class="list-item">
@@ -115,7 +123,7 @@
 	    	<input auto-complete="off" type="checkbox" class="hidden" id="right-content">
 	    	<aside class="right-content">
 		    	<label class="left-nav-slide" for="left-nav"></label>
-	    		<input autocomplete="off" type="radio" class="hidden each-article-item" checked name="each-item" id="article-whats-bootstrap">
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-whats-bootstrap">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Bootstrap 4</h2>
 	    			<p class="item-description">
@@ -330,6 +338,7 @@
 	    				</div>
 	    				<div class="demo-content">
 	    					<h3>PX</h3>
+	    					<p> Container padding in px [padding: 32px 48px;]</p>
 	    					<div class="px-content">
 	    						<div class="column-1 col-sm-3"></div>
 	    						<div class="column-2 col-sm-3"></div>
@@ -337,6 +346,7 @@
 	    						<div class="column-4 col-sm-3"></div>
 	    					</div>
 	    					<h3>REM</h3>
+	    					<p> Container padding in rem [padding: 2rem 3rem;]</p>
 	    					<div class="rem-content">
 	    						<div class="column-1 col-sm-3"></div>
 	    						<div class="column-2 col-sm-3"></div>
@@ -715,34 +725,30 @@
 	    			<h2 class="item-heading">
     					Generic modifications.
     				</h2>
-	    			<p class="item-description">
-    					<ul class="common-list">
-    						<li class="list-item">Global font-size increased from 14px to 16px, which means that the size of the text is bigger and more visible.</li>
-    						<li class="list-item">The font sizing and the grid system are now based on rems. Be aware that, if you prefer, you can still use pixels, ems, or points for typography. However, Bootstrap 4 font sizing is completely based on the rem unit and the reason behind this change is rems make easier for mobile devices to scale up or down.</li>
-    						<li class="list-item">It's important to remember that Bootstrap 4 drops the Glyphicons icon font. If you need icons, the dev team suggests The upstream version of <a href="http://glyphicons.com/" class="inline-link" target="_blank">Glyphicons</a>, <a href="https://octicons.github.com/" class="inline-link" target="_blank">Octicons</a>, <a href="http://fontawesome.io/" class="inline-link" target="_blank">Font Awesome</a></li>
-    						<li class="list-item">The use of rems applies to the grid system as well, that now has max-width set in rems.</li>
-    						<li class="list-item"><b>DISPLAY HEADINGS:</b> The use of rems has been employed also to introduce a new typographic component: display heading. Bootstrap 3 already supported classes like h1, h2, and so on to display elements as if they were headings. Bootstrap 4 increases the possibility for developers by implementing this new component, which should be used when you need a heading to stand out of the page. The new classes are <span class="new-one">.display-1</span>, <span class="new-one">.display-2</span>, <span class="new-one">.display-3</span>, and <span class="new-one">.display-4</span>.</li>
-    						<li class="list-item">Added a new grid tier for smaller devices at 576px and below (our new xs tier).</li>
-    						<li class="list-item">Custom &lt;blockquote&gt; styling has moved to classes—.blockquote and the .blockquote-reverse modifier.</li>
-    						<li class="list-item">
-    							<b>Handy utilities:</b> Several simple, but useful utility classes have been added like text, margin and padding helpers. There are also contextual colors and  <a href="http://v4-alpha.getbootstrap.com/layout/responsive-utilities/" class="inline-link" target="_blank">responsive utility classes</a> to hide content on specific breakpoints. There's even a new fluid Jumbotron!
-    						</li>
-    						<li class="list-item">
-    							<h5 class="sub-head">Migration tips</h5>
-    							<ol class="common-list">
-    								<li class="list-item">"pull-right" = "float-right"</li>
-    								<li class="list-item">"img-responsive" = "img-fluid"</li>
-    								<li class="list-item">"list-inline > li" = "list-inline-item"</li>
-    								<li class="list-item">"add nav-item" to "nav navbar > li"</li>
-    								<li class="list-item">"add nav-link" to "nav navbar > li > a"</li>
-    								<li class="list-item">the "active" class is added to "nav-item" for scrollspy</li>
-    								<li class="list-item">"carousel-inner > item" = "carousel-item"</li>
-    								<li class="list-item">"table-condensed" = "table-sm"</li>
-    								<li class="list-item">"center-block" = "mx-auto"</li>
-    							</ol>
-    						</li>
-    					</ul>	    				
-	    			</p>
+					<ul class="common-list paragraph">
+						<li class="list-item">Global font-size increased from 14px to 16px, which means that the size of the text is bigger and more visible.</li>
+						<li class="list-item">The font sizing and the grid system are now based on rems. Be aware that, if you prefer, you can still use pixels, ems, or points for typography. However, Bootstrap 4 font sizing is completely based on the rem unit and the reason behind this change is rems make easier for mobile devices to scale up or down.</li>
+						<li class="list-item">It's important to remember that Bootstrap 4 drops the Glyphicons icon font. If you need icons, the dev team suggests The upstream version of <a href="http://glyphicons.com/" class="inline-link" target="_blank">Glyphicons</a>, <a href="https://octicons.github.com/" class="inline-link" target="_blank">Octicons</a>, <a href="http://fontawesome.io/" class="inline-link" target="_blank">Font Awesome</a></li>
+						<li class="list-item">The use of rems applies to the grid system as well, that now has max-width set in rems.</li>
+						<li class="list-item"><b>DISPLAY HEADINGS:</b> The use of rems has been employed also to introduce a new typographic component: display heading. Bootstrap 3 already supported classes like h1, h2, and so on to display elements as if they were headings. Bootstrap 4 increases the possibility for developers by implementing this new component, which should be used when you need a heading to stand out of the page. The new classes are <span class="new-one">.display-1</span>, <span class="new-one">.display-2</span>, <span class="new-one">.display-3</span>, and <span class="new-one">.display-4</span>.</li>
+						<li class="list-item">Added a new grid tier for smaller devices at 576px and below (our new xs tier).</li>
+						<li class="list-item">Custom &lt;blockquote&gt; styling has moved to classes—.blockquote and the .blockquote-reverse modifier.</li>
+						<li class="list-item">
+							<b>Handy utilities:</b> Several simple, but useful utility classes have been added like text, margin and padding helpers. There are also contextual colors and  <a href="http://v4-alpha.getbootstrap.com/layout/responsive-utilities/" class="inline-link" target="_blank">responsive utility classes</a> to hide content on specific breakpoints. There's even a new fluid Jumbotron!
+						</li>
+					</ul>	
+					<h5 class="sub-head">Migration tips</h5>
+					<ol class="common-list">
+						<li class="list-item">"pull-right" = "float-right"</li>
+						<li class="list-item">"img-responsive" = "img-fluid"</li>
+						<li class="list-item">"list-inline > li" = "list-inline-item"</li>
+						<li class="list-item">"add nav-item" to "nav navbar > li"</li>
+						<li class="list-item">"add nav-link" to "nav navbar > li > a"</li>
+						<li class="list-item">the "active" class is added to "nav-item" for scrollspy</li>
+						<li class="list-item">"carousel-inner > item" = "carousel-item"</li>
+						<li class="list-item">"table-condensed" = "table-sm"</li>
+						<li class="list-item">"center-block" = "mx-auto"</li>
+					</ol> 
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-genric-modifications">
 	    			<label class="demo-slide" for="demo-genric-modifications"></label>
 	    			<div class="item-demo">
@@ -793,7 +799,7 @@
 	    								</div>
 	    							</div>
 	    						</li>
-<!-- 	    						<li class="list-item">	
+	    						<li class="list-item">	
 	    							<h5 class="sub-head"></h5>   							
 	    							<div class="example-block">
 	    								<div class="design">
@@ -812,30 +818,11 @@
 											</code>
 	    								</div>
 	    							</div>
-	    						</li> -->
+	    						</li>
 	    					</ol>
 	    				</div>
 	    			</div>
 	    		</article>
-<!--==[ ARTICLE STARTS - NEW BREAK POINT ]===========================================-->
-
-<!-- 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-break-point">
-	    		<article class="each-item-container">
-	    			<h2 class="item-heading">New Breakpoints</h2>
-	    			<p class="item-description">
-	    				
-	    			</p>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-new-break-point">
-	    			<label class="demo-slide" for="demo-new-break-point"></label>
-	    			<div class="item-demo">
-	    				<div class="demo-heading h3">
-	    					
-	    				</div>
-	    				<div class="demo-content">
-	    					
-	    				</div>
-	    			</div>
-	    		</article> -->
 <!--==[ ARTICLE STARTS - NEW GRID SYSTEM ]===========================================-->
 
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-grid-system">
@@ -876,33 +863,565 @@
 	    		</article>
 <!--==[ ARTICLE STARTS - FLEXBOX ]===========================================-->
 
-	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-flexbox">
+	    		<input autocomplete="off" checked type="radio" class="hidden each-article-item" name="each-item" id="article-flexbox">
 	    		<article class="each-item-container">
-	    			<h2 class="item-heading">Flexbox</h2>
+	    			<h2 class="item-heading">Flexbox in Bootstrap 4</h2>
+	    			<p>
+	    				The CSS3 Flexible Box, or Flexbox, is a new layout mode to improve arrangement of items on a page that can also manage directions and order within a container to accommodate different screen sizes and different display devices. It works like a box model which modifies the width or the height of its child items filling up the space available without the use of floats.
+	    			</p>
+	    			<p>
+	    				A lot of designers and developers use a Flexbox layout to easily position elements on different screen sizes by just using a small bit of code. This saves a lot of time in the development process.
+	    			</p>
 	    			<p class="item-description">
-	    				One of the greatest innovations in this version of Bootstrap is the support for Flexbox, which provides simpler and more flexible layout options in CSS.
-
-
-					    More specifically, [Flexbox] provides:
-
-					        Easy vertical alignment of content within a parent element.
-					        Easy reordering of content across devices and screen resolutions with the help of media queries.
-					        Easy CSS-only equal height columns for your grid-based layouts.
-
-					    All these things are possible outside flexbox, but typically require extra hacks and workarounds to do right.
-
-	    			</p>
+	    				Fortunately, Bootstrap 4 added Flexbox support and its one of the greatest innovations in this version of Bootstrap, which provides simpler and more flexible layout options in CSS.
+					</p>
+	    			<p>More specifically, Flexbox provides:</p>
+	    			<ul class="common-list paragraph">
+	    				<li class="list-item">Easy vertical alignment of content within a parent element.</li>
+	    				<li class="list-item">Easy reordering of content across devices and screen resolutions with the help of media queries.</li>
+	    				<li class="list-item">Easy CSS-only equal height columns for your grid-based layouts.</li>
+	    			</ul>
 	    			<p><b>Auto layout columns.</b>
-	    				Automatic equal-width column sizing with new .col-{breakpoint} classes. For example, for three equal-width columns at the xs breakpoint, you’d create three columns each with just .col-xs.
+	    				Automatic equal-width column sizing with new .col-{breakpoint} classes. For example, for three equal-width columns at the xs breakpoint, you’d create three columns each with just <span class="new-one">.col-xs</span>.
 	    			</p>
+	    			<p>
+	    				Apply display utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.
+	    			</p>
+	    			<h5 class="sub-head">Flex behaviors</h5>
+	    			<p>Responsive variations for .d-flex and .d-inline-flex.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.d-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-inline-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-sm-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-sm-inline-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-md-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-md-inline-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-lg-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-lg-inline-flex</span></li>
+	    				<li class="list-item"><span class="new-one">d-xl-flex</span></li>
+	    				<li class="list-item"><span class="new-one">.d-xl-inline-flex</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Direction</h5>
+	    			<p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is row. However, you may encounter situations where you needed to explicitly set this value. </p>
+	    			<p>Use <span class="new-one">.flex-row</span> to set a horizontal direction (the browser default), or <span class="new-one">.flex-row-reverse</span> to start the horizontal direction from the opposite side. Use <span class="new-one">.flex-column</span> to set a vertical direction, or <span class="new-one">.flex-column-reverse</span> to start the vertical direction from the opposite side.</p>
+	    			<p>Responsive variations for flex-direction.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.flex-row</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-row-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-column</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-column-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-row</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-row-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-column</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-column-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-row</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-row-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-column</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-column-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-row</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-row-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-column</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-column-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-row</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-row-reverse</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-column</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-column-reverse</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Justify content</h5>
+	    			<p>Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start &amp; y-axis if flex-direction: column). Choose from start (browser default), end, center, between, or around.</p>
+	    			<p>Responsive variations for justify-content.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.justify-content-start</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-end</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-center</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-between</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-around</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-sm-start</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-sm-end</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-sm-center</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-sm-between</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-sm-around</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-md-start</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-md-end</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-md-center</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-md-between</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-md-around</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-lg-start</span></li>
+	    				<li class="list-item"><span class="new-one">justify-content-lg-end</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-lg-center</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-lg-between</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-lg-around</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-xl-start</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-xl-end</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-xl-center</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-xl-between</span></li>
+	    				<li class="list-item"><span class="new-one">.justify-content-xl-around</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Align items</h5>
+	    			<p>Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).</p>
+	    			<p>Responsive variations for align-items.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.align-items-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-stretch</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-sm-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-sm-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-sm-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-sm-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-sm-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-items-md-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-md-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-md-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-md-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-md-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-items-lg-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-lg-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-lg-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-lg-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-lg-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-items-xl-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-xl-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-xl-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-xl-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-items-xl-stretch</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Align self</h5>
+	    			<p>Use align-self utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from the same options as align-items: start, end, center, baseline, or stretch (browser default).</p>
+	    			<p>Responsive variations for align-self.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.align-self-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-self-sm-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-sm-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-sm-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-sm-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-sm-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-self-md-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-md-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-md-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-md-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-md-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-self-lg-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-lg-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-lg-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-lg-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-lg-stretch</span></li>	    				
+	    				<li class="list-item"><span class="new-one">.align-self-xl-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-xl-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-xl-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-xl-baseline</span></li>
+	    				<li class="list-item"><span class="new-one">.align-self-xl-stretch</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Wrap</h5>
+	    			<p>Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with .flex-nowrap, wrapping with .flex-wrap, or reverse wrapping with .flex-wrap-reverse.</p>
+	    			<p>Responsive variations for flex-wrap.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.flex-nowrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-wrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-wrap-reverse</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.flex-sm-nowrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-wrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-sm-wrap-reverse</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.flex-md-nowrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-wrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-md-wrap-reverse</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.flex-lg-nowrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-wrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-lg-wrap-reverse</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.flex-xl-nowrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-wrap</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-xl-wrap-reverse</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Order</h5>
+	    			<p>Change the visual order of specific flex items with a handful of order utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As order takes any integer value (e.g., 5), add custom CSS for any additional values needed.</p>
+	    			<p>Responsive variations for order.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.order-first</span></li>
+	    				<li class="list-item"><span class="new-one">.order-last</span></li>
+	    				<li class="list-item"><span class="new-one">.order-unordered</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.order-sm-first</span></li>
+	    				<li class="list-item"><span class="new-one">.order-sm-last</span></li>
+	    				<li class="list-item"><span class="new-one">.order-sm-unordered</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.order-md-first</span></li>
+	    				<li class="list-item"><span class="new-one">.order-md-last</span></li>
+	    				<li class="list-item"><span class="new-one">.order-md-unordered</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.order-lg-first</span></li>
+	    				<li class="list-item"><span class="new-one">.order-lg-last</span></li>
+	    				<li class="list-item"><span class="new-one">.order-lg-unordered</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.order-xl-first</span></li>
+	    				<li class="list-item"><span class="new-one">.order-xl-last</span></li>
+	    				<li class="list-item"><span class="new-one">.order-xl-unordered</span></li>
+	    			</ul>
+	    			<h5 class="sub-head">Align content</h5>
+	    			<p>Use align-content utilities on flexbox containers to align flex items together on the cross axis. Choose from start (browser default), end, center, between, around, or stretch. </p>
+	    			<p>Responsive variations for align-content.</p>
+	    			<ul class="common-list two-section paragraph">
+	    				<li class="list-item"><span class="new-one">.align-content-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-around</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-stretch</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.align-content-sm-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-sm-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-sm-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-sm-around</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-sm-stretch</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.align-content-md-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-md-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-md-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-md-around</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-md-stretch</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.align-content-lg-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-lg-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-lg-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-lg-around</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-lg-stretch</span></li>	    			
+	    				<li class="list-item"><span class="new-one">.align-content-xl-start</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-xl-end</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-xl-center</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-xl-around</span></li>
+	    				<li class="list-item"><span class="new-one">.align-content-xl-stretch</span></li>
+	    			</ul>
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-flexbox">
 	    			<label class="demo-slide" for="demo-flexbox"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
-	    					
+	    					Flexbox in Bootstrap 4
 	    				</div>
-	    				<div class="demo-content">
-	    					
+	    				<div class="demo-content">	    
+		    				<ol class="common-list">
+		    					<li class="list-item">
+		    						<h4>Flex behaviors - flexbox</h4>
+		    						<p>Flex behaviours can be of 2 types:</p>
+			    					<ul class="common-list">
+			    						<li class="list-item">
+				    						<h5>Flex behaviors - flexbox</h5>			
+											<div class="example-block">
+												<div class="design">
+					    							<div class="d-flex p-2" style="background-color: #ddd;border: 1px solid #bbb;">I'm a flexbox container!</div>
+												</div>
+												<div class="code">
+									    			<code class="code-display m-0">
+														<pre class="code-line">
+														<span class="code pre">
+&lt;div class="d-flex p-2" style="background-color: #ddd;border: 1px solid #bbb;"&gt;I'm a flexbox container!&lt;/div&gt;</span>
+														</pre>
+													</code>
+												</div>
+											</div>
+				    					</li>
+				    					<li class="list-item">
+				    						<h5>Flex behaviors - inline-flexbox</h5>			
+											<div class="example-block">
+												<div class="design">
+					    							<div class="d-inline-flex p-2" style="background-color: #ddd;border: 1px solid #bbb;">I'm an inline flexbox container!</div>
+												</div>
+												<div class="code">
+									    			<code class="code-display paragraph">
+														<pre class="code-line">
+														<span class="code pre">
+&lt;div class="d-inline-flex p-2" style="background-color: #ddd;border: 1px solid #bbb;"&gt;I'm an inline flexbox container!&lt;/div&gt;</span>
+														</pre>
+													</code>
+												</div>
+											</div>
+			    						</li>
+			    					</ul>
+		    					</li>
+		    					<li class="list-item">
+		    						<h4>Direction</h4>	
+		    						<ul class="common-list">
+		    							<li class="list-item">
+		    								<h5>Flex row</h5>
+		    								<p>Use .flex-row to set a horizontal direction (the browser default), or .flex-row-reverse to start the horizontal direction from the opposite side.</p>
+											<div class="example-block">
+												<div class="design">
+													<div class="d-flex flex-row mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+													</div>
+													<div class="d-flex flex-row-reverse" style="background-color: #ddd;border: 1px solid #bbb;">
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+													</div>
+												</div>
+												<div class="code">
+									    			<code class="code-display m-0">
+														<pre class="code-line">
+														<span class="code pre">
+&lt;div class="d-flex flex-row mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex flex-row-reverse" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;</span>
+														</pre>
+													</code>
+												</div>
+											</div>
+		    							</li>
+		    							<li class="list-item">
+		    								<h5>Flex column</h5>
+		    								<p>Use .flex-column to set a vertical direction, or .flex-column-reverse to start the vertical direction from the opposite side.</p>
+											<div class="example-block">
+												<div class="design">
+													<div class="d-flex flex-column mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+													</div>
+													<div class="d-flex flex-column-reverse" style="background-color: #ddd;border: 1px solid #bbb;">
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+													  <div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+													</div>
+												</div>
+												<div class="code">
+									    			<code class="code-display m-0">
+														<pre class="code-line">
+														<span class="code pre">
+&lt;div class="d-flex flex-column mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex flex-column-reverse" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;</span>
+														</pre>
+													</code>
+												</div>
+											</div>
+		    							</li>
+		    						</ul>	
+		    					</li>		    					
+		    					<li class="list-item">
+		    						<h4>Justify content</h4>		
+									<div class="example-block">
+										<div class="design">
+											<div class="d-flex justify-content-start mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex justify-content-end mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex justify-content-center mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex justify-content-between mb-3" style="background-color: #ddd;border: 1px solid #bbb;">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex justify-content-around" style="background-color: #ddd;border: 1px solid #bbb;">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+										</div>
+										<div class="code">
+							    			<code class="code-display m-0">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="d-flex justify-content-start mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-end mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-center mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-between mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex justify-content-around" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+		    					</li>		    					
+		    					<li class="list-item">
+		    						<h4>Align items</h4>	
+		    						<p class="indicator nb">To understand the difference the container height must be greater than its items.</p>	
+									<div class="example-block">
+										<div class="design">
+<div class="d-flex align-items-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+</div>
+<div class="d-flex align-items-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+</div>
+<div class="d-flex align-items-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+</div>
+<div class="d-flex align-items-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+</div>
+<div class="d-flex align-items-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+</div>
+										</div>
+										<div class="code">
+							    			<code class="code-display m-0">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="d-flex align-items-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-items-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-items-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-items-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-items-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+		    					</li>		    					
+		    					<li class="list-item">
+		    						<h4>Align self</h4>		
+		    						<p class="indicator nb">Align self properties must be given to the items and not the row. To understand the difference the container height must be greater than its items.</p>
+									<div class="example-block">
+										<div class="design">
+<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+	<div class="p-2 align-self-start" style="border: 1px solid #bbb">Align self item </div>
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+</div>
+<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+	<div class="p-2 align-self-end" style="border: 1px solid #bbb">Align self item </div>
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+</div>
+<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+	<div class="p-2 align-self-center" style="border: 1px solid #bbb">Align self item</div>
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+</div>
+<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+	<div class="p-2 align-self-baseline" style="border: 1px solid #bbb">Align self item</div>
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+</div>
+<div class="d-flex align-self-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+	<div class="p-2 align-self-stretch" style="border: 1px solid #bbb">Align self item</div>
+	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+</div>
+										</div>
+										<div class="code">
+							    			<code class="code-display m-0">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div class="d-flex align-self-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-self-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-self-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-self-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="d-flex align-self-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+		    					</li>
+
+		    					
+<!-- 		    					<li class="list-item">
+		    						<h4></h4>		
+									<div class="example-block">
+										<div class="design">
+			    							
+										</div>
+										<div class="code">
+							    			<code class="code-display m-0">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+		    					</li> -->
+
+		    				</ol>		
 	    				</div>
 	    			</div>
 	    		</article>
@@ -1795,7 +2314,7 @@
 	    				This article was aimed at doing a quick overview of what's new in Bootstrap 4 and what will change with the official passage from version 3 to version 4. It is not meant to be all-encompassing, and the best advice if you want to know more about Bootstrap 4 is to read the documentation available on the official website carefully and follow the complete <a href="http://bootstrap4.guide/" class="inline-link" target="_blank">Bootstrap 4 Migration Guide</a> for the latest changes. The release date for Bootstrap 4 is currently unknown but if you want to have a more detailed idea of the other features the working group will focus its attention onto and see how their work-in-progress is going, <a href="https://github.com/twbs/bootstrap/pull/17021" class="inline-link" target="_blank">you can take a look at the GitHub page of the project</a>.
 	    			</p>
 	    			<div class="item-description d-flex developer-details">
-	    				<aside class="cube-wrap">
+	    				<aside class="cube-wrap conclusion">
 							<div class="cube">
 								<div data-content="" class="side front"></div>
 								<div data-content="" class="side back"></div>
@@ -1814,7 +2333,6 @@
 						</aside>
 						<aside class="detail-wrap">
 							<pre class="details">Praveen VS
-Senior Engineer
 Qburst
 							</pre>
 						</aside>
