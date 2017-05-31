@@ -217,6 +217,7 @@ body {
             -webkit-transform: translateZ(-20px) rotateY(180deg);
                 -ms-transform: translateZ(-20px) rotateY(180deg);
                  -o-transform: translateZ(-20px) rotateY(180deg);
+                    transform: translateZ(-20px) rotateY(180deg);
             background-color: transparent;
         } 
         .bottom-right {
@@ -375,6 +376,7 @@ body {
         -webkit-transform: translateZ(-50px) rotateY(180deg);
             -ms-transform: translateZ(-50px) rotateY(180deg);
              -o-transform: translateZ(-50px) rotateY(180deg);
+                transform: translateZ(-50px) rotateY(180deg);
     } 
     .bottom-right {
         -webkit-transform: rotateX(45deg);
