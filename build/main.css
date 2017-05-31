@@ -204,6 +204,7 @@ body {
       -webkit-transform: translateZ(-20px) rotateY(180deg);
       -ms-transform: translateZ(-20px) rotateY(180deg);
       -o-transform: translateZ(-20px) rotateY(180deg);
+      transform: translateZ(-20px) rotateY(180deg);
       background-color: transparent; }
     .cube-wrap.logo .bottom-right {
       -webkit-transform: rotateX(45deg);
@@ -338,7 +339,8 @@ body {
   .cube-wrap .back {
     -webkit-transform: translateZ(-50px) rotateY(180deg);
     -ms-transform: translateZ(-50px) rotateY(180deg);
-    -o-transform: translateZ(-50px) rotateY(180deg); }
+    -o-transform: translateZ(-50px) rotateY(180deg);
+    transform: translateZ(-50px) rotateY(180deg); }
   .cube-wrap .bottom-right {
     -webkit-transform: rotateX(45deg);
     -ms-transform: rotateX(45deg);
