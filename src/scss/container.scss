@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1rem;
     color: #000;
-    background: rgba(0,0,0,.2) url('/src/images/header-repeat-old.jpg') repeat left top;
+    background: rgba(0,0,0,.2) url('../images/header-repeat-old.jpg') repeat left top;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     z-index: 10;
     width: 60px;
     height: 40px;
-    background: url(/src/images/gototop.png) no-repeat center rgba(255,255,255,.7);
+    background: url(../images/gototop.png) no-repeat center rgba(255,255,255,.7);
     border: 1px solid #F9AE19; 
     border-radius: 50%;
     &:before {
@@ -628,7 +628,7 @@ body {
     }
     .left-nav-slide {
         right: 0;
-        background-image: url('/src/images/leftarrow.png');
+        background-image: url('../images/leftarrow.png');
         border-right: 0;
         &:before {
             content: "Close Nav";
@@ -750,7 +750,7 @@ body {
         width: 0px;
         opacity: 0;
         left: 0px;
-        background-image: url('/src/images/rightarrow.png');
+        background-image: url('../images/rightarrow.png');
         border-left: 0;
         &:before {
             content: "Open nav";
