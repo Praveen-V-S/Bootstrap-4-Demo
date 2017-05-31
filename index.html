@@ -8,15 +8,16 @@
 </head>
 <body>
     <main>
+    	<a href="#" class="go-to-top"></a>
     	<header class="page-header">
     		<div class="container">
     			<aside class="cube-wrap logo">
 					<div class="cube">
-						<div data-content="" class="side front"></div>
 						<div data-content="" class="side back"></div>
+						<div data-content="B4" class="center middle"></div>
+						<div data-content="" class="side front"></div>
 						<div data-content="" class="side left"></div>
 						<div data-content="" class="side right"></div>
-						<div data-content="B4" class="center middle"></div>
 					</div>
 				</aside>
     			<h1 class="main-title">Bootstrap 4</h1>
@@ -91,9 +92,9 @@
 		    					<li class="list-item">
 		    						<label class="menu-level2" for="article-tables">Tables</label>
 		    					</li>
-		    					<li class="list-item">
+<!-- 		    					<li class="list-item">
 		    						<label class="menu-level2" for="article-navbar">Navbar</label>
-		    					</li>
+		    					</li> -->
 		    				</ol>
 		    			</li>
 		    			<li class="list-item">
@@ -105,9 +106,9 @@
 		    			<li class="list-item">
 		    				<label class="menu-level1" for="article-common-changes">Common Changes</label>
 		    			</li>
-		    			<li class="list-item">
+<!-- 		    			<li class="list-item">
 		    				<label class="menu-level1" for="article-points-to-remember">Points to remember</label>
-		    			</li>
+		    			</li> -->
 		    			<li class="list-item">
 		    				<label class="menu-level1" for="article-conclusion">Conclusion</label>
 		    			</li>
@@ -121,7 +122,7 @@
 	    	<input auto-complete="off" type="checkbox" class="hidden" id="right-content">
 	    	<aside class="right-content">
 		    	<label class="left-nav-slide" for="left-nav"></label>
-	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-whats-bootstrap">
+	    		<input autocomplete="off" checked type="radio" class="hidden each-article-item" name="each-item" id="article-whats-bootstrap">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Bootstrap 4</h2>
 	    			<p class="item-description">
@@ -572,7 +573,7 @@
 	    					Addition of flexbox in bootstrap 4 makes form customisation more easy. You can check deatis of form <a href="https://v4-alpha.getbootstrap.com/components/forms/" target="_blank" class="inline-link">here</a>.
 	    				</li>
 	    			</ul>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-forms">
+	    			<!-- <input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-forms">
 	    			<label class="demo-slide" for="demo-forms"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
@@ -581,7 +582,7 @@
 	    				<div class="demo-content">
 	    					
 	    				</div>
-	    			</div>
+	    			</div> -->
 	    		</article>
 <!--==[ ARTICLE STARTS - DROPDOWNS ]===========================================-->
 
@@ -623,16 +624,288 @@
 	    			<p>Force your .nav’s contents to extend the full available width one of two modifier classes. To proportionately fill all available space with your .nav-items, use .nav-fill. Notice that all horizontal space is occupied, but not every nav item has the same width.</p>
 	    			<p>For equal-width elements, use .nav-justified. All horizontal space will be occupied by nav links, but unlike the .nav-fill above, every nav item will be the same width.</p>
 	    			<p>These are the main changes and many more is there. You can check those <a class="inline-link" target="_blank" href="https://v4-alpha.getbootstrap.com/components/navs/">here</a>.</p>
-	    			<!-- <input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-nav">
+	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-nav">
 	    			<label class="demo-slide" for="demo-nav"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
-	    					
+	    					Navs
 	    				</div>
 	    				<div class="demo-content">
-	    					
+	    					<ol class="list-item">
+	    						<li class="list-item">
+				    				<h4>Base nav</h4>
+									<div class="example-block">
+										<div class="design">
+											<ul class="nav">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;</span>
+												</pre>
+											</code>
+										</div>
+										<p>You can write nav in below format.</p>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;nav class="nav"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&lt;/nav&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+	    						</li>
+
+
+	    						<li class="list-item">
+				    				<h4>Vertical</h4>
+									<div class="example-block">
+										<div class="design">
+											<ul class="nav flex-column">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>	
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav flex-column"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+	    						</li>
+
+
+	    						<li class="list-item">
+				    				<h4>Tabs</h4>
+									<div class="example-block">
+										<div class="design">
+											<ul class="nav nav-tabs">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>	
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav nav-tabs"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;	</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+	    						</li>
+
+
+	    						<li class="list-item">
+				    				<h4>Pills</h4>
+									<div class="example-block">
+										<div class="design">
+											<ul class="nav nav-pills">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav nav-pills"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;	</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+	    						</li>
+
+
+	    						<li class="list-item">
+				    				<h4>Fill and justify</h4>
+									<div class="example-block">
+										<div class="design">
+											<ul class="nav nav-pills nav-fill">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav nav-pills nav-fill"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;	</span>
+												</pre>
+											</code>
+										</div>
+										<h4>Justify</h4>
+										<p>For equal-width elements, use .nav-justified. All horizontal space will be occupied by nav links, but unlike the .nav-fill above, every nav item will be the same width.</p>
+										<div class="design">
+											<ul class="nav nav-pills nav-justified">
+												<li class="nav-item">
+													<a class="nav-link active" href="#">Active</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">Link</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link disabled" href="#">Disabled</a>
+												</li>
+											</ul>
+										</div>
+										<div class="code">
+							    			<code class="code-display">
+												<pre class="code-line">
+													<span class="code pre">
+&lt;ul class="nav nav-pills nav-justified"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link disabled" href="#"&gt;Disabled&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;	</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+	    						</li>
+	    					</ol>
 	    				</div>
-	    			</div> -->
+	    			</div>
 	    		</article>
 <!--==[ ARTICLE STARTS - TOOLTIPS ]===========================================-->
 
@@ -737,15 +1010,15 @@
 					</ul>	
 					<h5 class="sub-head">Migration tips</h5>
 					<ol class="common-list">
-						<li class="list-item">"pull-right" = "float-right"</li>
-						<li class="list-item">"img-responsive" = "img-fluid"</li>
-						<li class="list-item">"list-inline > li" = "list-inline-item"</li>
-						<li class="list-item">"add nav-item" to "nav navbar > li"</li>
-						<li class="list-item">"add nav-link" to "nav navbar > li > a"</li>
-						<li class="list-item">the "active" class is added to "nav-item" for scrollspy</li>
-						<li class="list-item">"carousel-inner > item" = "carousel-item"</li>
-						<li class="list-item">"table-condensed" = "table-sm"</li>
-						<li class="list-item">"center-block" = "mx-auto"</li>
+						<li class="list-item">"pull-right" is replaced by "float-right"</li>
+						<li class="list-item">"img-responsive" is replaced by "img-fluid"</li>
+						<li class="list-item">"table-condensed" is replaced by "table-sm"</li>
+						<li class="list-item">"center-block" is replaced by "mx-auto"</li>
+						<li class="list-item">"list-inline-item" is a new class for "list-inline > li"</li>
+						<li class="list-item">"add nav-item" is a new class for "nav navbar > li"</li>
+						<li class="list-item">"add nav-link" is a new class for "nav navbar > li > a"</li>
+						<li class="list-item">The "active" class is added to "nav-item" for scrollspy</li>
+						<li class="list-item">"carousel-item" is a new class for "carousel-inner > item"</li>
 					</ol> 
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-genric-modifications">
 	    			<label class="demo-slide" for="demo-genric-modifications"></label>
@@ -790,27 +1063,7 @@
 												<pre class="code-line">
 												<span class="code pre">
 &lt;blockquote class="blockquote"&gt;
-	&lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit..&lt;/p&gt;
-&lt;/blockquote&gt;</span>
-												</pre>
-											</code>
-	    								</div>
-	    							</div>
-	    						</li>
-	    						<li class="list-item">	
-	    							<h5 class="sub-head"></h5>   							
-	    							<div class="example-block">
-	    								<div class="design">
-<blockquote class="blockquote">
-	<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
-</blockquote>
-	    								</div>
-	    								<div class="code">
-							    			<code class="code-display paragraph">
-												<pre class="code-line">
-												<span class="code pre">
-&lt;blockquote class="blockquote"&gt;
-	&lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit..&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="mb-0"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit..&lt;/p&gt;
 &lt;/blockquote&gt;</span>
 												</pre>
 											</code>
@@ -826,29 +1079,33 @@
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-new-grid-system">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">New Grid System</h2>
-	    			<p class="item-description">
-	    				Among the components that were already in action in Bootstrap 3 but have relevant edits in version 4, I want to mention two important changes. Firstly, a new grid breakpoint with the col-xl-* classes has been introduced. The 4 tier grid system Bootstrap 3 was based on has turned into being a 5 tier grid system including a new breakpoint to support all typical portrait and landscape screen widths.
-
-						Now the 5 tiers are:
-
-						    Extra-small (<544 px)
-						    Small (≥544 px)
-						    Medium (≥768 px)
-						    Large (≥992 px)
-						    Extra-large (≥1200 px)
-
-						The XL breakpoint is for >1200px screen widths, while the XS breakpoint allows us to target screens smaller than 544px, providing better support for typical smaller device widths.
-
-						The col-xs-* tier in version 3 supported screen widths under 768px, while the new tier supports screen widths under 544px. As a consequence, this change improves support for portrait views on mobile devices (smartphones).
-
-						container-fluid
-						container classes
-
-						Global font size increased from 14px to 16px.
-
-						media queries
-	    			</p>
-	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-new-grid-system">
+	    			<p>Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It’s based on a 12 column layout and has multiple tiers, one for each media query range. You can use it with Sass mixins or our predefined classes. Among the components that were already in action in Bootstrap 3 but have relevant edits in version 4, I want to mention two important changes. Firstly, a new grid breakpoint with the col-xl-* classes has been introduced. The 4 tier grid system Bootstrap 3 was based on has turned into being a 5 tier grid system including a new breakpoint to support all typical portrait and landscape screen widths. </p>
+	    			<p>Now the 5 tiers are:</p>
+	    			<ol class="common-list">
+	    				<li class="list-item">Extra-small (&lt;544 px) targetting with <span class="new-one">.col-xs-*</span></li>
+	    				<li class="list-item">Small (≥544 px) <span class="new-one">.col-sm-*</span></li>
+	    				<li class="list-item">Medium (≥768 px) <span class="new-one">.col-md-*</span></li>
+	    				<li class="list-item">Large (≥992 px) <span class="new-one">.col-lg-*</span></li>
+	    				<li class="list-item">Extra-large (≥1200 px) <span class="new-one">.col-xl-*</span></li>
+	    			</ol>
+	    			<p>Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., .col-sm-4 applies to small, medium, large, and extra large devices). For grids that are the same from the smallest of devices to the largest, use the .col and .col-* classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to .col.</p>
+	    			<h5 class="sub-head">How it works?</h5>
+	    			<p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. here’s how it works:</p>
+	    			<ul class="common-list">
+	    				<li class="list-item">Containers provide a means to center your site’s contents. Use .container for fixed width or .container-fluid for full width.</li>
+	    				<li class="list-item">Rows are horizontal groups of columns that ensure your columns are lined up properly. We use the negative margin method on .row to ensure all your content is aligned properly down the left side.</li>
+	    				<li class="list-item">Content should be placed within columns, and only columns may be immediate children of rows.</li>
+	    				<li class="list-item">Thanks to flexbox, grid columns without a set width will automatically layout with equal widths. For example, four instances of .col-sm will each automatically be 25% wide for small breakpoints.</li>
+	    				<li class="list-item">Column classes indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want four equal-width columns, you can use .col-sm-3.</li>
+	    				<li class="list-item">Columns have horizontal padding to create the gutters between individual columns, however, you can remove the margin from rows and padding from columns with .no-gutters on the .row.</li>
+	    				<li class="list-item">You can use predefined grid classes or Sass mixins for more semantic markup.</li>
+	    				<li class="list-item">The XL breakpoint is for >1200px screen widths, while the XS breakpoint allows us to target screens smaller than 544px, providing better support for typical smaller device widths.</li>
+	    			</ul>
+	    			<h5 class="sub-head">Variable width content</h5>
+	    			<p>Using the col-{breakpoint}-auto classes, columns can size itself based on the natural width of its content. This is super handy with single line content like inputs, numbers, etc. This, in conjunction with horizontal alignment classes, is very useful for centering layouts with uneven column sizes as viewport width changes.</p>
+	    			<h5 class="sub-head">No gutters</h5>
+	    			<p>The gutters between columns in our predefined grid classes can be removed with .no-gutters. This removes the negative margins from .row and the horizontal padding from all immediate children columns.</p>
+	    			<!-- <input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-new-grid-system">
 	    			<label class="demo-slide" for="demo-new-grid-system"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
@@ -857,11 +1114,11 @@
 	    				<div class="demo-content">
 	    					
 	    				</div>
-	    			</div>
+	    			</div> -->
 	    		</article>
 <!--==[ ARTICLE STARTS - FLEXBOX ]===========================================-->
 
-	    		<input autocomplete="off" checked type="radio" class="hidden each-article-item" name="each-item" id="article-flexbox">
+	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-flexbox">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Flexbox in Bootstrap 4</h2>
 	    			<p>
@@ -1085,6 +1342,13 @@
 	    				<li class="list-item"><span class="new-one">.align-content-xl-around</span></li>
 	    				<li class="list-item"><span class="new-one">.align-content-xl-stretch</span></li>
 	    			</ul>
+	    			<h5 class="sub-head">Flex order</h5>
+	    			<p>Use flexbox utilities for controlling the visual order of your content.</p>
+	    			<ul class="common-list paragraph">
+	    				<li class="list-item"><span class="new-one">.flex-first</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-last</span></li>
+	    				<li class="list-item"><span class="new-one">.flex-unordered</span></li>    	
+	    			</ul>
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-flexbox">
 	    			<label class="demo-slide" for="demo-flexbox"></label>
 	    			<div class="item-demo">
@@ -1155,14 +1419,14 @@
 														<pre class="code-line">
 														<span class="code pre">
 &lt;div class="d-flex flex-row mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex flex-row-reverse" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;</span>
 														</pre>
 													</code>
@@ -1190,14 +1454,14 @@
 														<pre class="code-line">
 														<span class="code pre">
 &lt;div class="d-flex flex-column mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex flex-column-reverse" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;</span>
 														</pre>
 													</code>
@@ -1241,29 +1505,29 @@
 												<pre class="code-line">
 												<span class="code pre">
 &lt;div class="d-flex justify-content-start mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex justify-content-end mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex justify-content-center mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex justify-content-between mb-3" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex justify-content-around" style="background-color: #ddd;border: 1px solid #bbb;"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;</span>
 												</pre>
 											</code>
@@ -1275,60 +1539,60 @@
 		    						<p class="indicator nb">To understand the difference the container height must be greater than its items.</p>	
 									<div class="example-block">
 										<div class="design">
-<div class="d-flex align-items-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
-</div>
-<div class="d-flex align-items-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
-</div>
-<div class="d-flex align-items-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
-</div>
-<div class="d-flex align-items-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
-</div>
-<div class="d-flex align-items-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
-	<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
-</div>
+											<div class="d-flex align-items-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex align-items-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex align-items-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex align-items-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
+											<div class="d-flex align-items-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 1</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 2</div>
+												<div class="p-2" style="border: 1px solid #bbb">Flex item 3</div>
+											</div>
 										</div>
 										<div class="code">
 							    			<code class="code-display m-0">
 												<pre class="code-line">
 												<span class="code pre">
 &lt;div class="d-flex align-items-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-items-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-items-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-items-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-items-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 1&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 2&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item 3&lt;/div&gt;
 &lt;/div&gt;</span>
 												</pre>
 											</code>
@@ -1340,84 +1604,107 @@
 		    						<p class="indicator nb">Align self properties must be given to the items and not the row. To understand the difference the container height must be greater than its items.</p>
 									<div class="example-block">
 										<div class="design">
-<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-	<div class="p-2 align-self-start" style="border: 1px solid #bbb">Align self item </div>
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-</div>
-<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-	<div class="p-2 align-self-end" style="border: 1px solid #bbb">Align self item </div>
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-</div>
-<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-	<div class="p-2 align-self-center" style="border: 1px solid #bbb">Align self item</div>
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-</div>
-<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-	<div class="p-2 align-self-baseline" style="border: 1px solid #bbb">Align self item</div>
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-</div>
-<div class="d-flex align-self-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-	<div class="p-2 align-self-stretch" style="border: 1px solid #bbb">Align self item</div>
-	<div class="p-2" style="border: 1px solid #bbb">normal container</div>
-</div>
+									<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+										<div class="p-2 align-self-start" style="border: 1px solid #bbb">Align self item </div>
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+									</div>
+									<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+										<div class="p-2 align-self-end" style="border: 1px solid #bbb">Align self item </div>
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+									</div>
+									<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+										<div class="p-2 align-self-center" style="border: 1px solid #bbb">Align self item</div>
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+									</div>
+									<div class="d-flex mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+										<div class="p-2 align-self-baseline" style="border: 1px solid #bbb">Align self item</div>
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+									</div>
+									<div class="d-flex align-self-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px">
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+										<div class="p-2 align-self-stretch" style="border: 1px solid #bbb">Align self item</div>
+										<div class="p-2" style="border: 1px solid #bbb">normal container</div>
+									</div>
 										</div>
 										<div class="code">
 							    			<code class="code-display m-0">
 												<pre class="code-line">
 												<span class="code pre">
 &lt;div class="d-flex align-self-start mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-self-end mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-self-center mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-self-baseline mb-3" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="d-flex align-self-stretch" style="background-color: #ddd;border: 1px solid #bbb; height: 100px"&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
-	&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">Flex item&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="p-2" style="border: 1px solid #bbb">normal container&lt;/div&gt;
+&lt;/div&gt;</span>
+												</pre>
+											</code>
+										</div>
+									</div>
+		    					</li>		    					
+		    					<li class="list-item">
+		    						<h4>Flex order</h4>		
+									<div class="example-block">
+										<div class="design">
+<div class="container" style="background-color: #ccc;border: 1px solid #aaa;">
+	<div class="row">
+		<div class="col flex-unordered" style="border: 1px solid #aaa;">
+			First, but unordered
+		</div>
+		<div class="col flex-last" style="border: 1px solid #aaa;">
+			Second, but last
+		</div>
+		<div class="col flex-first" style="border: 1px solid #aaa;">
+			Third, but first
+		</div>
+	</div>
+</div>
+										</div>
+										<div class="code">
+							    			<code class="code-display m-0">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;div&gt;
+&lt;div class="container" style="background-color: #ccc;border: 1px solid #aaa;"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col flex-unordered" style="border: 1px solid #aaa;"&gt;
+			First, but unordered
+		&lt;/div&gt;
+		&lt;div class="col flex-last" style="border: 1px solid #aaa;"&gt;
+			Second, but last
+		&lt;/div&gt;
+		&lt;div class="col flex-first" style="border: 1px solid #aaa;"&gt;
+			Third, but first
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</span>
 												</pre>
 											</code>
 										</div>
 									</div>
 		    					</li>
-
-		    					
-<!-- 		    					<li class="list-item">
-		    						<h4></h4>		
-									<div class="example-block">
-										<div class="design">
-			    							
-										</div>
-										<div class="code">
-							    			<code class="code-display m-0">
-												<pre class="code-line">
-												<span class="code pre">
-&lt;div&gt;</span>
-												</pre>
-											</code>
-										</div>
-									</div>
-		    					</li> -->
 
 		    				</ol>		
 	    				</div>
@@ -2198,17 +2485,921 @@
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-tables">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Tables</h2>
-	    			<p class="item-description">
-	    				Secondly, Bootstrap 3 does not support custom forms, which have been introduced in version 4. These are completely customizable elements that replace the browser defaults. 
+	    			<p class="item-description paragraph">
+	    				Due to the widespread use of tables across third-party widgets like calendars and date pickers, customization options are provided to tables. Just add the base class .table to any &lt;table&gt;, then extend with custom styles or any modifier classes. Bootstrap 4 added some new table classes that assist with building consistently styled and responsive tables. For a basic table with lightly padded cells and horizontal dividers, apply Bootstrap's .table class to the&lt;table&gt; element.
 	    			</p>
+	    			<ul class="common-list paragraph">
+	    				<li class="list-item">Add <span class="new-one">.table</span> to any &lt;table&gt; for default styles. </li>
+	    				<li class="list-item">We can also invert the colors with light text on dark backgrounds with <span class="new-one">.table-inverse</span>.</li>
+	    				<li class="list-item">Similar to default and inverse tables, use one of two modifier classes to make <thead>s appear light or dark gray. Use <span class="new-one">.thead-inverse</span> and <span class="new-one">.thead-default</span> classes. Table head styles are new in Bootstrap 4.</li>
+	    				<li class="list-item">Use <span class="new-one">.table-striped</span> to add zebra-striping to any table row within the &lt;tbody&gt;.</li>
+	    				<li class="list-item">Add <span class="new-one">.table-bordered</span> for borders on all sides of the table and cells.</li>
+	    				<li class="list-item">Add <span class="new-one">.table-hover</span> to enable a hover state on table rows within a <tbody>.</li>
+	    				<li class="list-item">Add <span class="new-one">.table-sm</span> to make tables more compact by cutting cell padding in half.</li>
+	    				<li class="list-item">Use contextual classes like <span class="new-one">.table-active</span>, <span class="new-one">.table-success</span>, <span class="new-one">.table-info</span>, <span class="new-one">.table-warning</span>, and <span class="new-one">.table-danger</span> to color table rows or individual cells.</li>
+	    			</ul>
+					<h5 class="sub-head">Responsive tables</h4>
+					<p>Create responsive tables by adding <span class="new-one">.table-responsive</span> to any <span class="new-one">.table</span> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+					<p class="indicator nb">We can add <span class="new-one">.table</span> and <span class="new-one">.table-responsive</span> to the actual &lt;table&gt; element.</p>
+					<h5 class="sub-head">Alpha Release</h4>
+					<p>Bootstrap 4 is currently in alpha release, therefore, do not use it in production yet. To be safe, refer to Bootstrap 3 Tables until Bootstrap 4 becomes an official release.</p>
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-tables">
 	    			<label class="demo-slide" for="demo-tables"></label>
 	    			<div class="item-demo">
 	    				<div class="demo-heading h3">
-	    					
+	    					Tables
 	    				</div>
 	    				<div class="demo-content">
-	    					
+	    					<ol class="common-list">	    						
+	    						<li class="list-item">
+	    							<h4>Default table</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    						<li class="list-item">
+	    							<h4>TableInverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-inverse">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>	
+	    						<li class="list-item">
+	    							<h4>Table Head - Default</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table">
+												<thead class="thead-default">
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead class="thead-default"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>			
+	    						<li class="list-item">
+	    							<h4>table Head - inverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table">
+												<thead class="thead-inverse">
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead class="thead-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>				
+	    						<li class="list-item">
+	    							<h4>Striped rows</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-striped"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>			
+	    						<li class="list-item">
+	    							<h4>Table stripped - Inverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-striped table-inverse">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-striped table-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>			
+	    						<li class="list-item">
+	    							<h4>Bordered table</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-bordered"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>			
+	    						<li class="list-item">
+	    							<h4>table bordered - Inverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-bordered table-inverse">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-bordered table-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>		
+	    						<li class="list-item">
+	    							<h4>Hoverable rows</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-hover"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>	    											
+	    						<li class="list-item">
+	    							<h4>Hoverable rows - Inverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-hover table-inverse">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-hover table-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>	    											
+	    						<li class="list-item">
+	    							<h4>Small table</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-sm">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-sm"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>			
+	    						<li class="list-item">
+	    							<h4>Small table - Inverse</h4>
+	    							<div class="example-block">
+	    								<div class="design">
+											<table class="table table-sm table-inverse">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Username</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+	    								</div>
+	    								<div class="code">
+							    			<code class="code-display paragraph">
+												<pre class="code-line">
+												<span class="code pre">
+&lt;table class="table table-sm table-inverse"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;First Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Last Name&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Username&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;1&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Otto&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@mdo&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;2&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jacob&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Thornton&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@fat&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;3&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Larry&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;the Bird&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;@twitter&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;
+&lt;/table&gt;</span>
+												</pre>
+											</code>
+	    								</div>
+	    							</div>
+	    						</li>
+	    					</ol>
 	    				</div>
 	    			</div>
 	    		</article>
@@ -2218,7 +3409,7 @@
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Navbar</h2>
 	    			<p class="item-description">
-	    				
+	    				The navbar is a wrapper that positions branding, navigation, and other elements in a concise header. It’s easily extensible and, can easily integrate responsive behaviors.
 	    			</p>
 	    			<input autocomplete="off" type="checkbox" class="hidden demo-slide-check" id="demo-navbar">
 	    			<label class="demo-slide" for="demo-navbar"></label>
@@ -2246,7 +3437,7 @@
 	    				All themes include a <a href="https://themes.getbootstrap.com/pages/our-license" class="inline-link" target="_blank">multiple-use license</a> for the purchaser and free updates for bug fixes and documentation updates for the life of the themes.
 	    			</p>
 	    			<p>
-	    				Are you intrested to know about new Themes? Then its <a class="inline-link" target="_blank" href="https://themes.getbootstrap.com/">here</a>.
+	    				Are you intrested to know more about new Themes? Then its <a class="inline-link" target="_blank" href="https://themes.getbootstrap.com/">here</a>.
 	    			</p>
 	    		</article>
 <!--==[ ARTICLE STARTS - REMOVED ]===========================================-->
@@ -2255,16 +3446,50 @@
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Removed Codes with there new ones if any</h2>
 	    			<p class="item-description">
-						<ol class="common-list">
-							<li class="list-item">"pull-right" = "float-right"</li>
-							<li class="list-item">"img-responsive" = "img-fluid"</li>
-							<li class="list-item">"list-inline > li" = "list-inline-item"</li>
-							<li class="list-item">"add nav-item" to "nav navbar > li"</li>
-							<li class="list-item">"add nav-link" to "nav navbar > li > a"</li>
-							<li class="list-item">"carousel-inner > item" = "carousel-item"</li>
-							<li class="list-item">"table-condensed" = "table-sm"</li>
-							<li class="list-item">"center-block" = "mx-auto"</li>
-						</ol>
+						<ul class="common-list">
+							<li class="list-item">"<span class="old-one">.pull-right</span>" is replaced by "<span class="new-one">.float-right</span>"</li>
+							<li class="list-item">"<span class="old-one">.img-responsive</span>" is replaced by "<span class="new-one">.img-fluid</span>"</li>
+							<li class="list-item">"<span class="old-one">.table-condensed</span>" is replaced by "<span class="new-one">.table-sm</span>"</li>
+							<li class="list-item">"<span class="old-one">.center-block</span>" is replaced by "<span class="new-one">.mx-auto</span>"</li>
+							<li class="list-item">"<span class="old-one">.col-md-offset-4</span>" is replaced by "<span class="new-one">.offset-md-4</span>"</li>
+							<li class="list-item">"<span class="old-one">.table-condensed</span>" is replaced by "<span class="new-one">.table-sm</span>"</li>
+							<li class="list-item">"<span class="old-one">.form-horizontal</span>" is removed  — it is no longer needed to display horizontal forms. Forms require the .row class when using grids. </li>
+							<li class="list-item">"<span class="old-one">.input-lg</span> and <span class="old-one">.input-sm</span>" is replaced by "<span class="new-one">.form-control-lg</span>" and <span class="new-one">.form-control-sm</span>.</li>
+							<li class="list-item">"<span class="old-one">.navbar-fixed-top</span> and <span class="old-one">.navbar-fixed-bottom</span>" is replaced by "<span class="new-one">.fixed-top</span> and <span class="new-one">.fixed-bottom</span>".</li>
+							<li class="list-item">"<span class="old-one">.in</span>" is replaced by "<span class="new-one">.show</span>". this is used to expand content upon page load.</li>
+							<li class="list-item">Related to carousel "<span class="old-one">.item</span>" is replaced by "<span class="new-one">.carousel-item</span>".</li>
+<!-- 							<li class="list-item">"" is replaced by "<span class="new-one"></span>".</li>
+							<li class="list-item">"" is replaced by "<span class="new-one"></span>".</li>
+							<li class="list-item">"" is replaced by "<span class="new-one"></span>".</li> -->
+							<li class="list-item">Bootstrap 4 uses the <span class="new-one">.form-text</span> class to display help text. ".help-block" class is removed</li>
+							<li class="list-item">Dropped the <span class="old-one">.has-feedback</span> class. It is no longer required with the introduction of the <span class="new-one">.form-control-*</span> classes.</li>
+
+
+							<li class="list-item">Dropped the <span class="old-one">.btn-default</span> class. Introduced the <span class="new-one">.btn-secondary</span> class. </li>
+							<li class="list-item">Dropped the <span class="old-one">.btn-xs</span> class (only .btn-sm and .btn-lg are available now).</li>
+							<li class="list-item">Previously there are many classes for media objects. classes are <span class="old-one">.media</span>, <span class="old-one">.media-body</span>, <span class="old-one">.media-object</span>, <span class="old-one">.media-heading</span>, <span class="old-one">.media-right</span>, <span class="old-one">.media-left</span>, and <span class="old-one">.media-list</span> and <span class="old-one">.media-body</span>. But now only <span class="new-one">.media</span> class is required. Margins can be applied using spacer utilities. Media objects are flexbox enabled in Bootstrap 4, so the various flexbox classes can also be applied.</li>
+							<li class="list-item">Dropped the <span class="old-one">.btn-group-xs</span> class.</li>
+							<li class="list-item">Bootstrap 4 dropped the <span class="old-one">.navbar-form</span> class. It's no longer necessary.</li>
+							<li class="list-item">Labels have been replaced by badges in Bootstrap 4. The <span class="old-one">.label-pill</span> class is not available. Badges can use the <span class="new-one">.badge-pill</span> for rounded corners.</li>
+							<li class="list-item">Using the progress element was abandoned in Alpha 6. Bootstrap 4 now uses the div element again.</li>
+							<li class="list-item">Introduced the <span class="new-one">.blockquote</span> class for styling the blockquote element i.e. styling this element is now an option.</li>
+							<li class="list-item">The <span class="old-one">.page-header</span> class is not supported.</li>
+							<li class="list-item">Horizontal lists are now declared with the .row class on the dl tag, then any of the grid system's predefined classes to the dt and dd tags. No need of .dl-horizontal class.</li>
+							<li class="list-item">In Bootstrap 3 You can specify a layout to be non-responsive. Bootstrap 4 dropped that feature.</li>
+							<li class="list-item">Cards are introduced in Bootstrap 4. this replace functionality that was previously provided by panels, wells, and thumbnails.</li>
+<!-- 							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li>
+							<li class="list-item"></li> -->
+							<li class="list-item">"<span class="new-one">.list-inline-item</span>" is a new class for "list-inline > li"</li>
+							<li class="list-item">"<span class="new-one">.add nav-item</span>" is a new class for "nav navbar > li"</li>
+							<li class="list-item">"<span class="new-one">.add nav-link</span>" is a new class for "nav navbar > li > a"</li>
+							<li class="list-item">"<span class="new-one">.carousel-item</span>" is a new class for "carousel-inner > item"</li>
+						</ul>
 	    			</p>
 	    		</article>
 <!--==[ ARTICLE STARTS - COMMON CHANGES ]===========================================-->
@@ -2285,11 +3510,12 @@
 	    				<li class="list-item"><b>Opt-in flexbox support is here.</b> The future is now—switch a boolean variable and recompile your CSS to take advantage of a flexbox-based grid system and components.</li>
 	    				<li class="list-item"><b>Dropped wells, thumbnails, and panels for cards.</b> Cards are a brand new component to Bootstrap, but they’ll feel super familiar as they do nearly everything wells, thumbnails, and panels did, only better.</li>
 	    				<li class="list-item"><b>Consolidated all our HTML resets into a new module, Reboot.</b> Reboot steps in where Normalize.css stops, giving you more opinionated resets like box-sizing: border-box, margin tweaks, and more all in a single Sass file.</li>
-	    				<li class="list-item"><b>Brand new customization options.</b> Instead of relegating style embellishments like gradients, transitions, shadows, and more to a separate stylesheet like v3, we’ve moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.</li>
+	    				<li class="list-item"><b>Brand new customization options in SASS.</b> Instead of relegating style embellishments like gradients, transitions, shadows, and more to a separate stylesheet like v3, we’ve moved all those options into Sass variables. Want default transitions on everything or to disable rounded corners? Simply update a variable and recompile.</li>
 	    				<li class="list-item"><b>Dropped support below IE10 and moved to rem and em units.</b> Dropping support for IE10 means we can take advantage of the best parts of CSS without being held back with CSS hacks or fallbacks. Pixels have been swapped for rems and ems where appropriate to make responsive typography and component sizing even easier. If you need IE10 support, keep using Bootstrap 3.</li>
 	    				<li class="list-item"><b>Rewrote all our JavaScript plugins.</b> Every plugin has been rewritten in ES6 to take advantage of the newest JavaScript enhancements. They also now come with UMD support, generic teardown methods, option type checking, and tons more.</li>
 	    				<li class="list-item"><b>Improved auto-placement of tooltips and popovers</b> with the help of a library called <a class="inline-link" target="_blank" href="http://tether.io/">Tether</a>.</li>
 	    				<li class="list-item"><b>Improved documentation.</b> We rewrote it all in Markdown and added a few handy plugins to streamline examples and code snippets to make working with our docs way easier. Improved search is also on its way.</li>
+	    				<li class="list-item"><b>New customization classes for table.</b> Bootstrap 4 added some new table classes that assist with building consistently styled and responsive tables.</li>
 	    				<li class="list-item"><b>And tons more!</b> Custom form controls, margin and padding classes, new utility classes, and more have also been included.</li>
 	    				<!-- <li class="list-item"><b></b></li> -->
 	    			</ul>
@@ -2299,9 +3525,36 @@
 	    		<input autocomplete="off" type="radio" class="hidden each-article-item" name="each-item" id="article-points-to-remember">
 	    		<article class="each-item-container">
 	    			<h2 class="item-heading">Points to remember</h2>
-	    			<p class="item-description">
-	    				
-	    			</p>
+	    			<ol class="common-listing">
+	    				<li class="list-item"><b>Navbar vs Nav:</b> Navbar aims to be common to all pages of your site whereas nav pills may be a navbar specific to a page or a section. ie. navbar is unique and provides links to main parts of your site. Nav pills may provide internal links to your page anchors. </li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    				<li class="list-item"></li>
+	    			</ol>
 	    		</article>
 <!--==[ ARTICLE STARTS - CONCLUSION ]===========================================-->
 
