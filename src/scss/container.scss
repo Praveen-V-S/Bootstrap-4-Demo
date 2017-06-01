@@ -18,6 +18,11 @@ body {
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
+a{
+    &:focus {
+        outline: none;
+    }
+}
 .go-to-top {
     position: fixed;
     bottom: 20px;
@@ -432,16 +437,20 @@ body {
     }
 }
 @-webkit-keyframes spin {
-    0% { transform: rotateY(0) rotateX(0) rotateZ(0); }
-    100% { transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
+    0% { -webkit-transform: rotateY(0) rotateX(0) rotateZ(0); }
+    100% { -webkit-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
 }
 @-ms-keyframes spin {
-    0% { transform: rotateY(0) rotateX(0) rotateZ(0); }
-    100% { transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
+    0% { -ms-transform: rotateY(0) rotateX(0) rotateZ(0); }
+    100% { -ms-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
+}
+@-moz-keyframes spin {
+    0% { -moz-transform: rotateY(0) rotateX(0) rotateZ(0); }
+    100% { -moz-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
 }
 @-o-keyframes spin {
-    0% { transform: rotateY(0) rotateX(0) rotateZ(0); }
-    100% { transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
+    0% { -o-transform: rotateY(0) rotateX(0) rotateZ(0); }
+    100% { -o-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
 }
 @keyframes spin {
     0% { transform: rotateY(0) rotateX(0) rotateZ(0); }
@@ -449,16 +458,20 @@ body {
 }
 
 @-webkit-keyframes spinY {
-    0% { transform: rotateY(0); }
-    100% { transform: rotateY(360deg) }
+    0% { -webkit-transform: rotateY(0); }
+    100% { -webkit-transform: rotateY(360deg) }
+}
+@-moz-keyframes spinY {
+    0% { -moz-transform: rotateY(0); }
+    100% { -moz-transform: rotateY(360deg) }
 }
 @-ms-keyframes spinY {
-    0% { transform: rotateY(0); }
-    100% { transform: rotateY(360deg) }
+    0% { -ms-transform: rotateY(0); }
+    100% { -ms-transform: rotateY(360deg) }
 }
 @-o-keyframes spinY {
-    0% { transform: rotateY(0); }
-    100% { transform: rotateY(360deg) }
+    0% { -o-transform: rotateY(0); }
+    100% { -o-transform: rotateY(360deg) }
 }
 @keyframes spinY {
     0% { transform: rotateY(0); }
@@ -466,19 +479,24 @@ body {
 }
 
 @-webkit-keyframes spinYreverse {
-    0% { transform: rotateY(0); }
-    50% { transform: rotateY(0) }
-    100% { transform: rotateY(-360deg) }
+    0% { -webkit-transform: rotateY(0); }
+    50% { -webkit-transform: rotateY(0) }
+    100% { -webkit-transform: rotateY(-360deg) }
+}
+@-moz-keyframes spinYreverse {
+    0% { -moz-transform: rotateY(0); }
+    50% { -moz-transform: rotateY(0) }
+    100% { -moz-transform: rotateY(-360deg) }
 }
 @-ms-keyframes spinYreverse {
-    0% { transform: rotateY(0); }
-    50% { transform: rotateY(0) }
-    100% { transform: rotateY(-360deg) }
+    0% { -ms-transform: rotateY(0); }
+    50% { -ms-transform: rotateY(0) }
+    100% { -ms-transform: rotateY(-360deg) }
 }
 @-o-keyframes spinYreverse {
-    0% { transform: rotateY(0); }
-    50% { transform: rotateY(0) }
-    100% { transform: rotateY(-360deg) }
+    0% { -o-transform: rotateY(0); }
+    50% { -o-transform: rotateY(0) }
+    100% { -o-transform: rotateY(-360deg) }
 }
 @keyframes spinYreverse {
     0% { transform: rotateY(0); }
@@ -655,7 +673,8 @@ body {
                         content: "";
                         position: absolute;
                         left: 0;
-                        top: 9px;
+                        top: 50%;
+                        margin-top: -4px;
                         border-top: 8px solid #aaa;
                         border-left: 4px solid transparent;
                         border-right: 4px solid transparent;
@@ -697,13 +716,14 @@ body {
                         &:before {
                             content: "";
                             border: 0 !important;
-                            width: .4rem;
-                            height: .3rem;
+                            width: 4px;
+                            height: 4px;
                             border-radius: 50%;
                             background-color: #aaa;
                             position: absolute;
                             left: 0px;
-                            top: 7px;
+                            top: 50%;
+                            margin-top: -2px;
                         }
                         &:hover {
                             color: #F9AE19;

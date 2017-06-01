@@ -274,13 +274,13 @@
 	    					Switched from Less to Sass for our source CSS files. Bootstrap 4 changed from regular CSS to SCSS to take full advantage of Bootstrap’s variables, mixins, and more.
 	    				</li>
 	    				<li class="list-item">
-	    					Replaced the separate optional theme with configurable options via SCSS variables (e.g., $enable-gradients: true).
+	    					Replaced the separate optional theme with configurable options via SCSS variables (e.g. $body-bg: $gray-dark;).
 	    				</li>
 	    				<li class="list-item">
-	    					Grid breakpoints and container widths are now handled via Sass maps ($grid-breakpoints and $container-max-widths) instead of a handful of separate variables. These replace the @screen-* variables entirely and allow you to fully customize the grid tiers.
+	    					Grid breakpoints and container widths are now handled via Sass.
 	    				</li>
 	    				<li class="list-item">
-	    					All @screen- variables have been removed in v4.0.0. Use the media-breakpoint-up(), media-breakpoint-down(), or media-breakpoint-only() Sass mixins or the $grid-breakpoints Sass map instead.
+	    					All @screen- variables have been removed in v4.0.0. Use the media-breakpoint-up(), media-breakpoint-down(), or media-breakpoint-{ breakpoint }-only() Sass mixins or the $grid-breakpoints Sass map instead.
 	    				</li>
 	    				<li class="list-item paragraph">
 	    					Media queries have also changed. Instead of repeating our media query declarations with the same value each time, we now have @include media-breakpoint-up/down/only. Now, instead of writing @media (min-width: @screen-sm-min) { ... }, you can write @include media-breakpoint-up(sm) { ... }.
@@ -551,9 +551,6 @@
 	    					New classes for checkboxes, radios, input sizing, and legends. While not 100% final, all form controls are named more clearly and consistently across our CSS.
 	    				</li>
 	    				<li class="list-item">
-	    					Replaced the base64 PNG background images with inline SVGs for custom form controls and validation states.
-	    				</li>
-	    				<li class="list-item">
 	    					We have brand new form validation and help text options. Validation states can now be applied on a per-input basis (with <span class="new-one">.form-control-{state}</span>) and optional validation feedback can be shown with <span class="new-one">.form-control-feedback</span>. Independent form help text can now be controlled with the new <span class="new-one">.form-text class</span>.
 	    				</li>
 	    				<li class="list-item">
@@ -689,8 +686,6 @@
 										</div>
 									</div>
 	    						</li>
-
-
 	    						<li class="list-item">
 				    				<h4>Vertical</h4>
 									<div class="example-block">
@@ -733,8 +728,6 @@
 										</div>
 									</div>
 	    						</li>
-
-
 	    						<li class="list-item">
 				    				<h4>Tabs</h4>
 									<div class="example-block">
@@ -777,8 +770,6 @@
 										</div>
 									</div>
 	    						</li>
-
-
 	    						<li class="list-item">
 				    				<h4>Pills</h4>
 									<div class="example-block">
@@ -821,8 +812,6 @@
 										</div>
 									</div>
 	    						</li>
-
-
 	    						<li class="list-item">
 				    				<h4>Fill and justify</h4>
 									<div class="example-block">
@@ -922,7 +911,6 @@
 	    				<li class="list-item">Tooltips rely on the 3rd party library <span class="new-one">Tether</span> for positioning. You must include <span class="new-one">tether.min.js</span> before bootstrap.js in order for tooltips to work!</li><span class="new-one"></span>
 	    				<li class="list-item">Tooltips are opt-in for performance reasons, so you must initialize them yourself.</li>
 	    				<li class="list-item">Tooltips with zero-length titles are never displayed.</li>
-	    				<li class="list-item">Specify <span class="new-one">container: 'body'</span> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
 	    				<li class="list-item">Triggering tooltips on hidden elements will not work.</li>
 	    				<li class="list-item">Tooltips for <span class="new-one">.disabled</span> or <b>disabled</b> elements must be triggered on a wrapper element.</li>
 	    				<li class="list-item">You can customise tooltip very easily. It is easy to show tooltip in top, right, bottom and left. To get more idea, see the demo.</li>
@@ -2367,7 +2355,7 @@
 	    									<li class="list-item new-one">.border-left-0</li>
 	    								</ol>
 	    								<div class="design">
-			    							<img src="./src/images/border-styles.png">
+			    							<img src="./src/images/border-styles.png" class="img-fluid">
 	    								</div>
 	    							</div>
 	    						</li>
@@ -2386,7 +2374,7 @@
 	    									<li class="list-item new-one">.rounded-0</li>
 	    								</ol>
 	    								<div class="design">
-			    							<img src="./src/images/border-radius-styles.png">
+			    							<img src="./src/images/border-radius-styles.png" class="img-fluid">
 	    								</div>
 	    							</div>
 	    						</li>
@@ -2471,7 +2459,7 @@
 	    					The default margin on blockquotes is 1em 40px, so we reset that to 0 0 1rem for something more consistent with other elements.
 	    				</li>
 	    				<li class="list-item">
-	    					The &lt;abbr&lt; element receives basic styling to make it stand out amongst paragraph text.
+	    					The &lt;abbr&gt; element receives basic styling to make it stand out amongst paragraph text.
 	    				</li>
 	    				<li class="list-item">
 	    					HTML5 adds a new global attribute named [hidden], which is styled as display: none by default. Borrowing an idea from PureCSS, we improve upon this default by making [hidden] { display: none !important; } to help prevent its display from getting accidentally overridden. While [hidden] isn’t natively supported by IE10, the explicit declaration in our CSS gets around that problem.
