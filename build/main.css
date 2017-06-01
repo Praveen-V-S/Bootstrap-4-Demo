@@ -19,7 +19,7 @@ html {
 body {
   font-size: 1rem;
   color: #000;
-  background: rgba(0, 0, 0, 0.2) url(/e8b79a6afaab55358f6a72927b3de432.jpg) repeat left top; }
+  background: rgba(0, 0, 0, 0.2) url(e8b79a6afaab55358f6a72927b3de432.jpg) repeat left top; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -38,7 +38,7 @@ a:focus {
   z-index: 10;
   width: 60px;
   height: 40px;
-  background: url(/5da127e0f965344190d31e5998911e4a.png) no-repeat center rgba(255, 255, 255, 0.7);
+  background: url(5da127e0f965344190d31e5998911e4a.png) no-repeat center rgba(255, 255, 255, 0.7);
   border: 1px solid #F9AE19;
   border-radius: 50%; }
   .go-to-top:before {
@@ -128,6 +128,10 @@ a:focus {
       position: relative;
       width: 40px;
       height: 40px;
+      -webki-animation: spinY 50s infinite linear;
+      -moz-animation: spinY 50s infinite linear;
+      -ms-animation: spinY 50s infinite linear;
+      -o-animation: spinY 50s infinite linear;
       animation: spinY 50s infinite linear;
       -webkit-transform-style: preserve-3d;
       -ms-transform-style: preserve-3d;
@@ -174,6 +178,9 @@ a:focus {
       .cube-wrap.logo .center:before {
         content: attr(data-content);
         -webkit-animation: spinYreverse 100s infinite linear;
+        -moz-animation: spinYreverse 100s infinite linear;
+        -ms-animation: spinYreverse 100s infinite linear;
+        -o-animation: spinYreverse 100s infinite linear;
         animation: spinYreverse 100s infinite linear; }
       .cube-wrap.logo .center.ver {
         border-width: 2px; }
@@ -566,7 +573,7 @@ a:focus {
     position: relative; }
   .left-nav .left-nav-slide {
     right: 0;
-    background-image: url(/c1147be5d2915645f2c17e3ca90e6ed2.png);
+    background-image: url(c1147be5d2915645f2c17e3ca90e6ed2.png);
     border-right: 0; }
     .left-nav .left-nav-slide:before {
       content: "Close Nav";
@@ -663,7 +670,7 @@ a:focus {
     width: 0px;
     opacity: 0;
     left: 0px;
-    background-image: url(/46dd05f4db301a064de899631ecb37b1.png);
+    background-image: url(46dd05f4db301a064de899631ecb37b1.png);
     border-left: 0; }
     .right-content .left-nav-slide:before {
       content: "Open nav";
